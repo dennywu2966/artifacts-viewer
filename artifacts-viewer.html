@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artifacts Viewer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Fira+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CDN Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';</script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: false, theme: 'neutral', fontFamily: 'Fira Code' });
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #F8FAFC;
+      --sidebar-bg: #F1F5F9;
+      --sidebar-border: #E2E8F0;
+      --text-primary: #1E293B;
+      --text-secondary: #64748B;
+      --accent: #0EA5E9;
+      --accent-hover: #E0F2FE;
+      --success: #22C55E;
+      --font-heading: 'Fira Code', monospace;
+      --font-body: 'Fira Sans', sans-serif;
+    }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--text-primary); height: 100vh; overflow: hidden; }
+    .app { display: flex; flex-direction: column; height: 100vh; }
+
+    /* Header */
+    header { height: 56px; background: #fff; border-bottom: 1px solid var(--sidebar-border); display: flex; align-items: center; padding: 0 20px; justify-content: space-between; flex-shrink: 0; }
+    header h1 { font-family: var(--font-heading); font-size: 18px; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+    header h1 svg { color: var(--accent); }
+    .header-actions { display: flex; gap: 12px; }
+    .search-box { display: flex; align-items: center; background: var(--sidebar-bg); border: 1px solid var(--sidebar-border); border-radius: 8px; padding: 6px 12px; gap: 8px; }
+    .search-box input { border: none; background: none; outline: none; font-family: var(--font-body); font-size: 14px; width: 200px; }
+    .search-box svg { width: 16px; height: 16px; color: var(--text-secondary); }
+
+    /* Main Layout */
+    .main { display: flex; flex: 1; overflow: hidden; }
+
+    /* Sidebar */
+    .sidebar { width: 260px; background: var(--sidebar-bg); border-right: 1px solid var(--sidebar-border); overflow-y: auto; flex-shrink: 0; }
+    .sidebar-section { margin-bottom: 8px; }
+    .sidebar-title {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-secondary);
+      padding: 12px 16px 8px;
+      font-weight: 600;
+    }
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      gap: 10px;
+      font-size: 14px;
+      border-left: 3px solid transparent;
+    }
+    .sidebar-item:hover { background: var(--accent-hover); }
+    .sidebar-item.active {
+      background: var(--accent-hover);
+      border-left-color: var(--accent);
+      font-weight: 500;
+    }
+    .sidebar-item svg { width: 18px; height: 18px; color: var(--text-secondary); flex-shrink: 0; }
+    .sidebar-item .file-icon { width: 16px; height: 16px; font-size: 12px; }
+    .sidebar-item .file-size { margin-left: auto; font-size: 11px; color: var(--text-secondary); }
+
+    /* Content */
+    .content { flex: 1; overflow: auto; padding: 24px; background: #fff; }
+    .content-inner { max-width: 1200px; margin: 0 auto; }
+
+    /* Footer */
+    footer { height: 36px; background: #fff; border-top: 1px solid var(--sidebar-border); display: flex; align-items: center; padding: 0 20px; font-size: 12px; color: var(--text-secondary); gap: 20px; flex-shrink: 0; }
+    footer .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--success); }
+
+    /* Welcome Screen */
+    .welcome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: var(--text-secondary);
+      text-align: center;
+    }
+    .welcome svg { width: 80px; height: 80px; margin-bottom: 20px; opacity: 0.4; }
+    .welcome h2 { font-family: var(--font-heading); font-size: 20px; font-weight: 500; margin-bottom: 8px; color: var(--text-primary); }
+    .welcome p { font-size: 14px; }
+
+    /* Markdown Styles */
+    .markdown-preview { max-width: 800px; margin: 0 auto; line-height: 1.7; }
+    .markdown-preview h1 { font-family: var(--font-heading); font-size: 2em; margin: 0 0 0.5em; padding-bottom: 0.3em; border-bottom: 2px solid var(--accent); }
+    .markdown-preview h2 { font-family: var(--font-heading); font-size: 1.5em; margin: 1.5em 0 0.5em; }
+    .markdown-preview h3 { font-family: var(--font-heading); font-size: 1.25em; margin: 1.5em 0 0.5em; }
+    .markdown-preview p { margin: 1em 0; }
+    .markdown-preview code { background: #E2E8F0; padding: 2px 6px; border-radius: 4px; font-family: var(--font-heading); font-size: 0.9em; }
+    .markdown-preview pre { background: #1E293B; color: #F8FAFC; padding: 16px; border-radius: 8px; overflow-x: auto; margin: 1em 0; }
+    .markdown-preview pre code { background: none; padding: 0; }
+    .markdown-preview .mermaid { background: #fff; padding: 20px; border-radius: 8px; margin: 1em 0; text-align: center; border: 1px solid var(--sidebar-border); }
+    .markdown-preview blockquote { border-left: 4px solid var(--accent); padding-left: 16px; color: var(--text-secondary); margin: 1em 0; }
+    .markdown-preview ul, .markdown-preview ol { margin: 1em 0; padding-left: 2em; }
+    .markdown-preview li { margin: 0.5em 0; }
+    .markdown-preview a { color: var(--accent); text-decoration: none; }
+    .markdown-preview a:hover { text-decoration: underline; }
+    .markdown-preview table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+    .markdown-preview th, .markdown-preview td { border: 1px solid var(--sidebar-border); padding: 8px 12px; text-align: left; }
+    .markdown-preview th { background: var(--sidebar-bg); font-weight: 600; }
+    .markdown-preview img { max-width: 100%; border-radius: 8px; }
+
+    /* Image Viewer */
+    .image-viewer { display: flex; justify-content: center; align-items: center; height: 100%; padding: 20px; }
+    .image-viewer img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+
+    /* PDF Viewer */
+    .pdf-viewer { display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 20px; }
+    .pdf-page { background: #fff; box-shadow: 0 4px 20px rgba(0,0,0,0.15); border-radius: 4px; }
+    .pdf-page-label { font-family: var(--font-heading); font-size: 12px; color: var(--text-secondary); margin-top: 8px; }
+
+    /* Embed Viewer */
+    .embed-viewer { width: 100%; height: calc(100vh - 140px); border: none; border-radius: 8px; }
+
+    /* Error State */
+    .error-viewer { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: #EF4444; }
+    .error-viewer svg { width: 48px; height: 48px; margin-bottom: 16px; }
+    .error-viewer p { font-family: var(--font-heading); }
+
+    /* Loading */
+    .loading { display: flex; align-items: center; justify-content: center; height: 100%; gap: 12px; color: var(--text-secondary); }
+    .loading-spinner { width: 24px; height: 24px; border: 3px solid var(--sidebar-border); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+        </svg>
+        Artifacts Viewer
+      </h1>
+      <div class="header-actions">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <input type="text" placeholder="Search files..." id="searchInput">
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <aside class="sidebar" id="sidebar">
+        <!-- Populated by JS -->
+      </aside>
+
+      <main class="content">
+        <div class="content-inner" id="content">
+          <!-- Preview area -->
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <span class="dot"></span>
+      <span id="status">Ready</span>
+      <span id="fileCount">0 files</span>
+    </footer>
+  </div>
+
+  <script>
+    // ==================== Configuration ====================
+
+    // File categories with icons
+    const fileCategories = [
+      { id: 'docs', name: 'Documents', icon: '📄', extensions: ['pdf', 'doc', 'docx'] },
+      { id: 'slides', name: 'Presentations', icon: '📊', extensions: ['ppt', 'pptx'] },
+      { id: 'markdown', name: 'Markdown', icon: '📝', extensions: ['md', 'mdx'] },
+      { id: 'diagrams', name: 'Diagrams', icon: '🔀', extensions: ['mmd', 'mermaid'] },
+      { id: 'images', name: 'Images', icon: '🖼️', extensions: ['png', 'jpg', 'jpeg', 'gif', 'webp', 'svg'] },
+      { id: 'other', name: 'Other', icon: '📦', extensions: [] },
+    ];
+
+    // Sample files - in production, this would be auto-scanned
+    const files = [
+      { name: 'sample.pdf', path: 'docs/sample.pdf', category: 'docs', size: '2.3MB' },
+      { name: 'presentation.pptx', path: 'slides/presentation.pptx', category: 'slides', size: '5.1MB' },
+      { name: 'readme.md', path: 'markdown/readme.md', category: 'markdown', size: '4.2KB' },
+      { name: 'architecture.mmd', path: 'diagrams/architecture.mmd', category: 'diagrams', size: '1.1KB' },
+      { name: 'photo.jpg', path: 'images/photo.jpg', category: 'images', size: '2.8MB' },
+      { name: 'diagram.svg', path: 'images/diagram.svg', category: 'images', size: '45KB' },
+      { name: 'notes.md', path: 'markdown/notes.md', category: 'markdown', size: '2.8KB' },
+    ];
+
+    // ==================== Viewers ====================
+
+    const viewers = {
+      // Image viewer
+      image: {
+        extensions: ['png', 'jpg', 'jpeg', 'gif', 'webp', 'svg'],
+        render: (path) => `
+          <div class="image-viewer">
+            <img src="${path}" alt="Preview" onerror="showError('Failed to load image')">
+          </div>
+        `
+      },
+
+      // Markdown viewer
+      markdown: {
+        extensions: ['md', 'mdx'],
+        render: async (path) => {
+          try {
+            const response = await fetch(path);
+            if (!response.ok) throw new Error('File not found');
+            const text = await response.text();
+            let html = marked.parse(text);
+
+            // Process mermaid code blocks
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = html;
+
+            const codeBlocks = tempDiv.querySelectorAll('pre code');
+            for (const block of codeBlocks) {
+              if (block.classList.contains('language-mermaid') || block.classList.contains('language-mmermaid')) {
+                const diagram = block.textContent;
+                const id = 'mermaid-' + Math.random().toString(36).substr(2, 9);
+                const container = document.createElement('div');
+                container.className = 'mermaid';
+                container.id = id;
+                container.textContent = diagram;
+                block.parentElement.replaceWith(container);
+              }
+            }
+
+            const finalHtml = tempDiv.innerHTML;
+
+            // Render mermaid after DOM update
+            setTimeout(async () => {
+              try {
+                await mermaid.run({ querySelector: '.mermaid' });
+              } catch (e) {
+                console.error('Mermaid render error:', e);
+              }
+            }, 100);
+
+            return `<div class="markdown-preview">${finalHtml}</div>`;
+          } catch (e) {
+            return `<div class="error-viewer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><path d="m15 9-6 6m0-6 6 6"/>
+              </svg>
+              <p>Failed to load: ${e.message}</p>
+            </div>`;
+          }
+        }
+      },
+
+      // PDF viewer
+      pdf: {
+        extensions: ['pdf'],
+        render: async (path) => {
+          try {
+            const loadingTask = pdfjsLib.getDocument(path);
+            const pdf = await loadingTask.promise;
+            let html = '<div class="pdf-viewer">';
+
+            for (let i = 1; i <= pdf.numPages; i++) {
+              const page = await pdf.getPage(i);
+              const scale = 1.5;
+              const viewport = page.getViewport({ scale });
+
+              const canvas = document.createElement('canvas');
+              const context = canvas.getContext('2d');
+              canvas.height = viewport.height;
+              canvas.width = viewport.width;
+              canvas.className = 'pdf-page';
+
+              await page.render({ canvasContext: context, viewport }).promise;
+
+              html += `<div class="pdf-page-wrapper">`;
+              html += canvas.outerHTML;
+              html += `<div class="pdf-page-label">Page ${i} of ${pdf.numPages}</div>`;
+              html += `</div>`;
+            }
+            html += '</div>';
+            return html;
+          } catch (e) {
+            return `<div class="error-viewer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><path d="m15 9-6 6m0-6 6 6"/>
+              </svg>
+              <p>Failed to load PDF: ${e.message}</p>
+            </div>`;
+          }
+        }
+      },
+
+      // Google Docs viewer for DOC/DOCX
+      doc: {
+        extensions: ['doc', 'docx'],
+        render: (path) => {
+          const baseUrl = window.location.href.replace(/[^/]*$/, '');
+          const fullUrl = baseUrl + path;
+          const encodedUrl = encodeURIComponent(fullUrl);
+          return `<iframe class="embed-viewer" src="https://docs.google.com/gview?embedded=1&url=${encodedUrl}"></iframe>`;
+        }
+      },
+
+      // Google Slides viewer for PPT/PPTX
+      ppt: {
+        extensions: ['ppt', 'pptx'],
+        render: (path) => {
+          const baseUrl = window.location.href.replace(/[^/]*$/, '');
+          const fullUrl = baseUrl + path;
+          const encodedUrl = encodeURIComponent(fullUrl);
+          return `<iframe class="embed-viewer" src="https://docs.google.com/gview?embedded=1&url=${encodedUrl}"></iframe>`;
+        }
+      }
+    };
+
+    // ==================== App Logic ====================
+
+    function getCategoryById(id) {
+      return fileCategories.find(c => c.id === id);
+    }
+
+    function getFilesByCategory(categoryId) {
+      return files.filter(f => f.category === categoryId);
+    }
+
+    function getFileExtension(path) {
+      return path.split('.').pop().toLowerCase();
+    }
+
+    function findViewer(path) {
+      const ext = getFileExtension(path);
+      for (const [key, viewer] of Object.entries(viewers)) {
+        if (viewer.extensions.includes(ext)) {
+          return viewer;
+        }
+      }
+      return null;
+    }
+
+    function showWelcome() {
+      document.getElementById('content').innerHTML = `
+        <div class="welcome">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+          </svg>
+          <h2>Select a file to preview</h2>
+          <p>Navigate using the sidebar to view your artifacts</p>
+        </div>
+      `;
+    }
+
+    function showError(message) {
+      document.getElementById('content').innerHTML = `
+        <div class="error-viewer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/><path d="m15 9-6 6m0-6 6 6"/>
+          </svg>
+          <p>${message}</p>
+        </div>
+      `;
+    }
+
+    function showLoading() {
+      document.getElementById('content').innerHTML = `
+        <div class="loading">
+          <div class="loading-spinner"></div>
+          <span>Loading...</span>
+        </div>
+      `;
+    }
+
+    async function previewFile(path) {
+      const file = files.find(f => f.path === path);
+      if (!file) return;
+
+      // Update active state
+      document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
+      const activeEl = document.querySelector(`[data-path="${path}"]`);
+      if (activeEl) activeEl.classList.add('active');
+
+      // Update status
+      document.getElementById('status').textContent = `Viewing: ${file.name}`;
+
+      // Find viewer
+      const viewer = findViewer(path);
+      if (!viewer) {
+        showError(`No viewer available for .${getFileExtension(path)} files`);
+        return;
+      }
+
+      // Render
+      showLoading();
+
+      try {
+        if (viewer.render.constructor.name === 'AsyncFunction') {
+          const html = await viewer.render(path);
+          document.getElementById('content').innerHTML = html;
+        } else {
+          const html = viewer.render(path);
+          document.getElementById('content').innerHTML = html;
+        }
+      } catch (e) {
+        showError(`Error: ${e.message}`);
+      }
+    }
+
+    function renderSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.innerHTML = '';
+
+      for (const category of fileCategories) {
+        const categoryFiles = getFilesByCategory(category.id);
+        if (categoryFiles.length === 0 && category.id !== 'other') continue;
+
+        const section = document.createElement('div');
+        section.className = 'sidebar-section';
+
+        const title = document.createElement('div');
+        title.className = 'sidebar-title';
+        title.textContent = `${category.icon} ${category.name}`;
+        section.appendChild(title);
+
+        for (const file of categoryFiles) {
+          const item = document.createElement('div');
+          item.className = 'sidebar-item';
+          item.dataset.path = file.path;
+          item.onclick = () => previewFile(file.path);
+
+          const icon = document.createElement('span');
+          icon.className = 'file-icon';
+          icon.textContent = getFileIcon(file.name);
+
+          const name = document.createElement('span');
+          name.textContent = file.name;
+
+          const size = document.createElement('span');
+          size.className = 'file-size';
+          size.textContent = file.size;
+
+          item.appendChild(icon);
+          item.appendChild(name);
+          item.appendChild(size);
+          section.appendChild(item);
+        }
+
+        sidebar.appendChild(section);
+      }
+
+      document.getElementById('fileCount').textContent = `${files.length} files`;
+    }
+
+    function getFileIcon(filename) {
+      const ext = filename.split('.').pop().toLowerCase();
+      const icons = {
+        pdf: '📕',
+        doc: '📘',
+        docx: '📘',
+        ppt: '📙',
+        pptx: '📙',
+        md: '📝',
+        mdx: '📝',
+        mmd: '🔀',
+        mermaid: '🔀',
+        png: '🖼️',
+        jpg: '🖼️',
+        jpeg: '🖼️',
+        gif: '🖼️',
+        webp: '🖼️',
+        svg: '📐',
+      };
+      return icons[ext] || '📄';
+    }
+
+    // Search functionality
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      const items = document.querySelectorAll('.sidebar-item');
+
+      items.forEach(item => {
+        const name = item.querySelector('span:nth-child(2)').textContent.toLowerCase();
+        item.style.display = name.includes(query) ? 'flex' : 'none';
+      });
+    });
+
+    // Initialize
+    renderSidebar();
+    showWelcome();
+  </script>
+</body>
+</html>

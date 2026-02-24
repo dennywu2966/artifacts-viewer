@@ -1,0 +1,8 @@
+graph TD
+    A[Start] --> B{User Action}
+    B -->|Click File| C[Find Renderer]
+    B -->|Search| D[Filter Files]
+    C --> E[Render Preview]
+    D --> F[Update Sidebar]
+    E --> G[Display Content]
+    F --> G
