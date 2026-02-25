@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "node1",
+      "type": "text",
+      "x": 100,
+      "y": 100,
+      "width": 250,
+      "height": 120,
+      "text": "# Project Overview\n\nThis is a sample Obsidian canvas demonstrating the JSON Canvas format.",
+      "color": "4"
+    },
+    {
+      "id": "node2",
+      "type": "text",
+      "x": 450,
+      "y": 50,
+      "width": 220,
+      "height": 100,
+      "text": "## Tasks\n\n- [ ] Design UI\n- [ ] Implement viewer\n- [ ] Add tests",
+      "color": "5"
+    },
+    {
+      "id": "node3",
+      "type": "text",
+      "x": 450,
+      "y": 200,
+      "width": 220,
+      "height": 100,
+      "text": "## Notes\n\nCanvas viewer renders JSON Canvas files beautifully.",
+      "color": "6"
+    },
+    {
+      "id": "node4",
+      "type": "link",
+      "x": 100,
+      "y": 300,
+      "width": 200,
+      "height": 80,
+      "url": "https://jsoncanvas.org"
+    },
+    {
+      "id": "node5",
+      "type": "group",
+      "x": 750,
+      "y": 100,
+      "width": 300,
+      "height": 250,
+      "label": "Resources",
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge1",
+      "fromNode": "node1",
+      "fromSide": "right",
+      "toNode": "node2",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "edge2",
+      "fromNode": "node1",
+      "fromSide": "right",
+      "toNode": "node3",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "edge3",
+      "fromNode": "node2",
+      "fromSide": "bottom",
+      "toNode": "node3",
+      "toSide": "top",
+      "color": "5"
+    }
+  ]
+}

@@ -558,6 +558,115 @@
       margin-bottom: 16px;
     }
 
+    /* Canvas Viewer */
+    .canvas-viewer {
+      width: 100%;
+      height: calc(100vh - 160px);
+      overflow: auto;
+      position: relative;
+      background: #F5F5F4;
+      border-radius: var(--radius-lg);
+    }
+
+    .canvas-container {
+      position: relative;
+      min-width: 2000px;
+      min-height: 1500px;
+      padding: 40px;
+    }
+
+    .canvas-node {
+      position: absolute;
+      border-radius: var(--radius-md);
+      padding: 16px;
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .canvas-node:hover {
+      transform: scale(1.02);
+      box-shadow: var(--shadow-lg);
+      z-index: 1000;
+    }
+
+    .canvas-node.text-node {
+      background: var(--surface);
+    }
+
+    .canvas-node.file-node {
+      background: #E0F2FE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #0284C7;
+    }
+
+    .canvas-node.link-node {
+      background: #F0FDF4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .canvas-node.link-node a {
+      color: #16A34A;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .canvas-node.group-node {
+      background: rgba(255,255,255,0.5);
+      border: 2px dashed var(--border);
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .canvas-node .node-label {
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+    }
+
+    .canvas-node .node-content {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .canvas-node .node-content h1,
+    .canvas-node .node-content h2,
+    .canvas-node .node-content h3 {
+      margin: 0 0 8px 0;
+      font-size: 16px;
+    }
+
+    .canvas-edge {
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .canvas-edge line {
+      stroke: var(--border);
+      stroke-width: 2;
+    }
+
+    .canvas-edge.arrow line {
+      marker-end: url(#arrowhead);
+    }
+
+    /* Canvas Colors */
+    .canvas-color-1 { background: #FEE2E2; border-left: 4px solid #DC2626; }
+    .canvas-color-2 { background: #FEF3C7; border-left: 4px solid #D97706; }
+    .canvas-color-3 { background: #FEF9C3; border-left: 4px solid #CA8A04; }
+    .canvas-color-4 { background: #DCFCE7; border-left: 4px solid #16A34A; }
+    .canvas-color-5 { background: #CFFAFE; border-left: 4px solid #0891B2; }
+    .canvas-color-6 { background: #F3E8FF; border-left: 4px solid #9333EA; }
+
     /* Scrollbar */
     ::-webkit-scrollbar {
       width: 8px;
@@ -620,6 +729,7 @@
       { id: 'markdown', name: 'Markdown', extensions: ['md', 'mdx'] },
       { id: 'diagrams', name: 'Diagrams', extensions: ['mmd', 'mermaid'] },
       { id: 'images', name: 'Images', extensions: ['png', 'jpg', 'jpeg', 'gif', 'webp', 'svg'] },
+      { id: 'canvas', name: 'Canvas', extensions: ['canvas'] },
     ];
 
     // Files - paths relative to artifacts folder
@@ -632,6 +742,7 @@
       { name: 'diagram.svg', path: 'images/diagram.svg', category: 'images', size: '45 KB' },
       { name: 'notes.md', path: 'markdown/notes.md', category: 'markdown', size: '2.8 KB' },
       { name: 'test_skill.md', path: 'markdown/test_skill.md', category: 'markdown', size: '65 B' },
+      { name: 'sample.canvas', path: 'canvas/sample.canvas', category: 'canvas', size: '1.8 KB' },
     ];
 
     // ==================== Viewers ====================
@@ -733,8 +844,84 @@
           const encodedUrl = encodeURIComponent(fullUrl);
           return `<iframe class="embed-viewer" src="https://docs.google.com/gview?embedded=1&url=${encodedUrl}"></iframe>`;
         }
+      },
+
+      // Canvas viewer for Obsidian JSON Canvas files
+      canvas: {
+        extensions: ['canvas'],
+        render: async (path) => {
+          try {
+            const response = await fetch(path);
+            if (!response.ok) throw new Error('File not found');
+            const canvasData = await response.json();
+
+            const nodes = canvasData.nodes || [];
+            const edges = canvasData.edges || [];
+
+            // Calculate bounds
+            let minX = 0, minY = 0, maxX = 2000, maxY = 1500;
+            nodes.forEach(node => {
+              minX = Math.min(minX, node.x);
+              minY = Math.min(minY, node.y);
+              maxX = Math.max(maxX, node.x + node.width);
+              maxY = Math.max(maxY, node.y + node.height);
+            });
+
+            // Render edges
+            let edgesHtml = '';
+            edges.forEach(edge => {
+              const fromNode = nodes.find(n => n.id === edge.fromNode);
+              const toNode = nodes.find(n => n.id === edge.toNode);
+              if (fromNode && toNode) {
+                const x1 = fromNode.x + fromNode.width;
+                const y1 = fromNode.y + fromNode.height / 2;
+                const x2 = toNode.x;
+                const y2 = toNode.y + toNode.height / 2;
+                const color = edge.color ? `stroke: ${getCanvasColor(edge.color)};` : '';
+                const marker = edge.toEnd === 'arrow' ? 'url(#arrow)' : '';
+                edgesHtml += `<svg class="canvas-edge" style="position:absolute;left:0;top:0;width:${maxX}px;height:${maxY}px;pointer-events:none;"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="${getCanvasColor(edge.color || '1')}"/></marker></defs><line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${getCanvasColor(edge.color || '1')}" stroke-width="2" marker-end="${marker}"/></svg>`;
+              }
+            });
+
+            // Render nodes
+            let nodesHtml = '';
+            nodes.forEach(node => {
+              const colorClass = node.color ? `canvas-color-${node.color}` : '';
+              const typeClass = `${node.type}-node`;
+
+              let content = '';
+              if (node.type === 'text') {
+                content = `<div class="node-content">${node.text || ''}</div>`;
+              } else if (node.type === 'file') {
+                content = `<div class="node-content"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg><span>${node.file?.split('/').pop() || 'File'}</span></div>`;
+              } else if (node.type === 'link') {
+                content = `<div class="node-content"><a href="${node.url}" target="_blank">${node.url}</a></div>`;
+              } else if (node.type === 'group') {
+                content = node.label ? `<div class="node-label">${node.label}</div>` : '';
+              }
+
+              nodesHtml += `<div class="canvas-node ${typeClass} ${colorClass}" style="left:${node.x}px;top:${node.y}px;width:${node.width}px;height:${node.height}px;">${content}</div>`;
+            });
+
+            return `<div class="canvas-viewer"><div class="canvas-container" style="width:${maxX}px;height:${maxY}px;">${edgesHtml}${nodesHtml}</div></div>`;
+          } catch (e) {
+            return `<div class="error-viewer"><p>Failed to load canvas: ${e.message}</p></div>`;
+          }
+        }
       }
     };
+
+    function getCanvasColor(color) {
+      const colors = {
+        '1': '#DC2626',
+        '2': '#D97706',
+        '3': '#CA8A04',
+        '4': '#16A34A',
+        '5': '#0891B2',
+        '6': '#9333EA'
+      };
+      return colors[color] || colors['1'];
+    }
 
     // ==================== App Logic ====================
 
@@ -762,7 +949,8 @@
         slides: '📊',
         markdown: '📝',
         diagrams: '🔀',
-        images: '🖼️'
+        images: '🖼️',
+        canvas: '🎨'
       };
 
       const categoryDesc = {
@@ -770,7 +958,8 @@
         slides: 'Presentations',
         markdown: 'Notes & docs',
         diagrams: 'Mermaid diagrams',
-        images: 'Photos & graphics'
+        images: 'Photos & graphics',
+        canvas: 'Obsidian canvases'
       };
 
       document.getElementById('content').innerHTML = `
@@ -804,7 +993,8 @@
         slides: '#D97706',
         markdown: '#16A34A',
         diagrams: '#9333EA',
-        images: '#0284C7'
+        images: '#0284C7',
+        canvas: '#EC4899'
       };
       return colors[cat] || '#007AFF';
     }
@@ -897,7 +1087,8 @@
             slides: '📊',
             markdown: '📝',
             diagrams: '🔀',
-            images: '🖼️'
+            images: '🖼️',
+            canvas: '🎨'
           };
           icon.textContent = iconMap[category.id];
 
