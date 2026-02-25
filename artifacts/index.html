@@ -769,7 +769,7 @@
 
     async function loadManifest() {
       try {
-        const response = await fetch('manifest.json');
+        const response = await fetch('manifest.json?t=' + Date.now(), { cache: 'no-store' });
         if (response.ok) {
           const manifest = await response.json();
           if (manifest.directories) fileCategories = manifest.directories;
@@ -911,6 +911,38 @@
         }
       },
 
+      json: {
+        extensions: ['json'],
+        render: async (path) => {
+          try {
+            const response = await fetch(path, { cache: 'no-store' });
+            if (!response.ok) throw new Error('File not found');
+            const text = await response.text();
+            let formatted;
+            try { formatted = JSON.stringify(JSON.parse(text), null, 2); } catch { formatted = text; }
+            const escaped = formatted.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return `<div class="markdown-preview"><pre style="overflow:auto;font-size:13px;line-height:1.5"><code>${escaped}</code></pre></div>`;
+          } catch (e) {
+            return `<div class="error-viewer"><p>Failed to load: ${e.message}</p></div>`;
+          }
+        }
+      },
+
+      txt: {
+        extensions: ['txt', 'text', 'log'],
+        render: async (path) => {
+          try {
+            const response = await fetch(path, { cache: 'no-store' });
+            if (!response.ok) throw new Error('File not found');
+            const text = await response.text();
+            const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return `<div class="markdown-preview"><pre style="white-space:pre-wrap;font-size:13px;line-height:1.6">${escaped}</pre></div>`;
+          } catch (e) {
+            return `<div class="error-viewer"><p>Failed to load: ${e.message}</p></div>`;
+          }
+        }
+      },
+
       // Canvas viewer for Obsidian JSON Canvas files
       canvas: {
         extensions: ['canvas'],
@@ -1041,10 +1073,10 @@
             ${fileCategories.map((cat, idx) => `
               <div class="bento-card ${idx === 0 ? 'large' : ''}" onclick="selectFirstFile('${cat.id}')">
                 <div class="card-icon" style="background: ${getCategoryColor(cat.id)}20; color: ${getCategoryColor(cat.id)}">
-                  ${categoryIcons[cat.id]}
+                  ${categoryIcons[cat.id] || '📁'}
                 </div>
                 <h3>${cat.name}</h3>
-                <p>${categoryDesc[cat.id]}</p>
+                <p>${categoryDesc[cat.id] || (getFilesByCategory(cat.id).length + ' files')}</p>
               </div>
             `).join('')}
           </div>
@@ -1197,6 +1229,18 @@
       renderSidebar();
       showWelcome();
     });
+
+    // Auto-poll manifest for changes every 5 seconds
+    setInterval(async () => {
+      const prevFileCount = files.length;
+      const prevCatCount = fileCategories.length;
+      await loadManifest();
+      if (files.length !== prevFileCount || fileCategories.length !== prevCatCount) {
+        renderSidebar();
+        if (document.querySelector('.welcome')) showWelcome();
+        document.getElementById('fileCount').textContent = `${files.length} artifacts`;
+      }
+    }, 5000);
   </script>
 </body>
 </html>

@@ -1,0 +1,925 @@
+{
+  "generated_at": "2026-02-25T04:01:54.486672+00:00",
+  "signal_count": 15,
+  "entity_count": 14,
+  "mix_policy": {
+    "china_domestic": 0.5,
+    "china_global": 0.3,
+    "other": 0.2
+  },
+  "mix_target_counts": {
+    "china_domestic": 10,
+    "china_global": 6,
+    "other": 4
+  },
+  "mix_actual_counts": {
+    "china_domestic": 2,
+    "china_global": 2,
+    "other": 10
+  },
+  "mix_gap_counts": {
+    "china_domestic": 8,
+    "china_global": 4,
+    "other": 0
+  },
+  "insights": {
+    "focus_distribution_all": {
+      "china_domestic": 2,
+      "china_global": 2,
+      "other": 10
+    },
+    "focus_distribution_priority": {
+      "china_domestic": 2,
+      "china_global": 2,
+      "other": 10
+    },
+    "signal_distribution_priority": {
+      "funding": 7,
+      "github_adoption": 5,
+      "community_pain": 2
+    },
+    "entity_distribution_priority": {
+      "enterprise_project": 11,
+      "individual": 3
+    },
+    "score_bands_priority": {
+      "80-100": 0,
+      "60-79": 0,
+      "40-59": 6,
+      "0-39": 8
+    }
+  },
+  "priority_targets": [
+    {
+      "company": "grafana",
+      "focus_bucket": "china_domestic",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 48,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "grafana",
+          "signal_type": "community_pain",
+          "title": "fix(deps): update module github.com/open-telemetry/opentelemetry-collector-contrib/extension/bearertokenauthextension to v0.107.0 [security]",
+          "url": "https://github.com/grafana/agent/pull/7218",
+          "source": "github_issue_search",
+          "published_at": "2026-02-24T15:26:19Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "organization",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T15:26:19+00:00"
+    },
+    {
+      "company": "Pedaily",
+      "focus_bucket": "china_domestic",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 33,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Pedaily",
+          "signal_type": "funding",
+          "title": "市值160亿，中国电商SaaS ERP龙头登陆港交所",
+          "url": "https://news.pedaily.cn/202510/556175.shtml",
+          "source": "bing_news",
+          "published_at": "2025-10-22T17:02:00+00:00",
+          "bucket_hint": "china_domestic"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-10-22T17:02:00+00:00"
+    },
+    {
+      "company": "ICIJ",
+      "focus_bucket": "china_global",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 50,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "ICIJ",
+          "signal_type": "github_adoption",
+          "title": "ICIJ/datashare actively updates search stack",
+          "url": "https://github.com/ICIJ/datashare",
+          "source": "github_repo_search",
+          "published_at": "2026-02-24T10:48:03Z",
+          "bucket_hint": "china_global",
+          "owner_type": "organization",
+          "repo_stars": 709,
+          "repo_forks": 66
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T10:48:03+00:00"
+    },
+    {
+      "company": "36Kr",
+      "focus_bucket": "china_global",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 8,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "36Kr",
+          "signal_type": "funding",
+          "title": "59起融资，11家闯关IPO，关税风暴下，品牌出海赛道依旧热钱翻涌",
+          "url": "https://www.36kr.com/p/3507426463390601",
+          "source": "bing_news",
+          "published_at": "2025-10-13T11:55:00+00:00",
+          "bucket_hint": "china_global"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-10-13T11:55:00+00:00"
+    },
+    {
+      "company": "opensearch-project",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "opensearch-project",
+          "signal_type": "github_adoption",
+          "title": "opensearch-project/sql actively updates search stack",
+          "url": "https://github.com/opensearch-project/sql",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:02:00Z",
+          "bucket_hint": "other",
+          "owner_type": "organization",
+          "repo_stars": 163,
+          "repo_forks": 184
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:02:00+00:00"
+    },
+    {
+      "company": "home-lang",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "home-lang",
+          "signal_type": "github_adoption",
+          "title": "home-lang/pantry actively updates search stack",
+          "url": "https://github.com/home-lang/pantry",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:01:47Z",
+          "bucket_hint": "other",
+          "owner_type": "organization",
+          "repo_stars": 6,
+          "repo_forks": 0
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:01:47+00:00"
+    },
+    {
+      "company": "markany-inc",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "markany-inc",
+          "signal_type": "github_adoption",
+          "title": "markany-inc/siem-cep-ueba-server actively updates search stack",
+          "url": "https://github.com/markany-inc/siem-cep-ueba-server",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T03:49:32Z",
+          "bucket_hint": "other",
+          "owner_type": "organization",
+          "repo_stars": 0,
+          "repo_forks": 0
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T03:49:32+00:00"
+    },
+    {
+      "company": "ansg191-lab",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 40,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "ansg191-lab",
+          "signal_type": "community_pain",
+          "title": "Update grafana/grafana Docker tag to v12.4.0",
+          "url": "https://github.com/ansg191-lab/anshulg-cluster/pull/2630",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T04:01:28Z",
+          "bucket_hint": "other",
+          "owner_type": "organization",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:01:28+00:00"
+    },
+    {
+      "company": "Morningstar",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 28,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Morningstar",
+          "signal_type": "funding",
+          "title": "Milvus Surpasses 40,000 GitHub Stars, Reinforcing Leadership in Open-Source Vector Databases",
+          "url": "https://www.morningstar.com/news/pr-newswire/20251218cn51449/milvus-surpasses-40000-github-stars-reinforcing-leadership-in-open-source-vector-databases",
+          "source": "bing_news",
+          "published_at": "2025-12-18T15:59:00+00:00",
+          "bucket_hint": "other"
+        },
+        {
+          "company": "Morningstar",
+          "signal_type": "funding",
+          "title": "KIOXIA AiSAQ Technology Integrated into Milvus Vector Database",
+          "url": "https://www.morningstar.com/news/business-wire/20251216556818/kioxia-aisaq-technology-integrated-into-milvus-vector-database",
+          "source": "bing_news",
+          "published_at": "2025-12-16T16:00:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 2,
+      "latest_signal_at": "2025-12-18T15:59:00+00:00"
+    },
+    {
+      "company": "SaaS startup Prosperr.io",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 25,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "SaaS startup Prosperr.io",
+          "signal_type": "funding",
+          "title": "SaaS startup Prosperr.io raises $4 million in a seed funding round led by Jungle Ventures",
+          "url": "https://www.thehindubusinessline.com/info-tech/saas-startup-prosperrio-raises-4-million-in-a-seed-funding-round-led-by-jungle-ventures/article70428985.ece",
+          "source": "bing_news",
+          "published_at": "2025-12-22T21:51:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-12-22T21:51:00+00:00"
+    },
+    {
+      "company": "Vector databases",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 25,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Vector databases",
+          "signal_type": "funding",
+          "title": "Vector databases: When a girl goes to shop for a scarf",
+          "url": "https://www.dqindia.com/dqdeeptech/vector-databases-when-a-girl-goes-to-shop-for-a-scarf-10910829",
+          "source": "bing_news",
+          "published_at": "2025-12-15T08:15:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-12-15T08:15:00+00:00"
+    },
+    {
+      "company": "From shiny object to sober reality",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 25,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "From shiny object to sober reality",
+          "signal_type": "funding",
+          "title": "From shiny object to sober reality: The vector database story, two years later",
+          "url": "https://venturebeat.com/data-infrastructure/from-shiny-object-to-sober-reality-the-vector-database-story-two-years-later",
+          "source": "bing_news",
+          "published_at": "2025-11-15T16:00:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-11-15T16:00:00+00:00"
+    },
+    {
+      "company": "HariSekhon",
+      "focus_bucket": "other",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 23,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "HariSekhon",
+          "signal_type": "github_adoption",
+          "title": "HariSekhon/Knowledge-Base actively updates search stack",
+          "url": "https://github.com/HariSekhon/Knowledge-Base",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:00:45Z",
+          "bucket_hint": "other",
+          "owner_type": "user",
+          "repo_stars": 285,
+          "repo_forks": 55
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:00:45+00:00"
+    },
+    {
+      "company": "Cheque-in",
+      "focus_bucket": "other",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 8,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Cheque-in",
+          "signal_type": "funding",
+          "title": "Cheque-in: 10 ANZ startups raised nearly $193 million this week",
+          "url": "https://www.startupdaily.net/topic/funding/cheque-in-10-anz-startups-raised-nearly-193-million-this-week/",
+          "source": "bing_news",
+          "published_at": "2026-02-12T21:34:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-12T21:34:00+00:00"
+    }
+  ],
+  "results": [
+    {
+      "company": "ICIJ",
+      "focus_bucket": "china_global",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 50,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "ICIJ",
+          "signal_type": "github_adoption",
+          "title": "ICIJ/datashare actively updates search stack",
+          "url": "https://github.com/ICIJ/datashare",
+          "source": "github_repo_search",
+          "published_at": "2026-02-24T10:48:03Z",
+          "bucket_hint": "china_global",
+          "owner_type": "organization",
+          "repo_stars": 709,
+          "repo_forks": 66
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T10:48:03+00:00"
+    },
+    {
+      "company": "grafana",
+      "focus_bucket": "china_domestic",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 48,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "grafana",
+          "signal_type": "community_pain",
+          "title": "fix(deps): update module github.com/open-telemetry/opentelemetry-collector-contrib/extension/bearertokenauthextension to v0.107.0 [security]",
+          "url": "https://github.com/grafana/agent/pull/7218",
+          "source": "github_issue_search",
+          "published_at": "2026-02-24T15:26:19Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "organization",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T15:26:19+00:00"
+    },
+    {
+      "company": "opensearch-project",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "opensearch-project",
+          "signal_type": "github_adoption",
+          "title": "opensearch-project/sql actively updates search stack",
+          "url": "https://github.com/opensearch-project/sql",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:02:00Z",
+          "bucket_hint": "other",
+          "owner_type": "organization",
+          "repo_stars": 163,
+          "repo_forks": 184
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:02:00+00:00"
+    },
+    {
+      "company": "home-lang",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "home-lang",
+          "signal_type": "github_adoption",
+          "title": "home-lang/pantry actively updates search stack",
+          "url": "https://github.com/home-lang/pantry",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:01:47Z",
+          "bucket_hint": "other",
+          "owner_type": "organization",
+          "repo_stars": 6,
+          "repo_forks": 0
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:01:47+00:00"
+    },
+    {
+      "company": "markany-inc",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "markany-inc",
+          "signal_type": "github_adoption",
+          "title": "markany-inc/siem-cep-ueba-server actively updates search stack",
+          "url": "https://github.com/markany-inc/siem-cep-ueba-server",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T03:49:32Z",
+          "bucket_hint": "other",
+          "owner_type": "organization",
+          "repo_stars": 0,
+          "repo_forks": 0
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T03:49:32+00:00"
+    },
+    {
+      "company": "ansg191-lab",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 40,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "ansg191-lab",
+          "signal_type": "community_pain",
+          "title": "Update grafana/grafana Docker tag to v12.4.0",
+          "url": "https://github.com/ansg191-lab/anshulg-cluster/pull/2630",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T04:01:28Z",
+          "bucket_hint": "other",
+          "owner_type": "organization",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:01:28+00:00"
+    },
+    {
+      "company": "Pedaily",
+      "focus_bucket": "china_domestic",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 33,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Pedaily",
+          "signal_type": "funding",
+          "title": "市值160亿，中国电商SaaS ERP龙头登陆港交所",
+          "url": "https://news.pedaily.cn/202510/556175.shtml",
+          "source": "bing_news",
+          "published_at": "2025-10-22T17:02:00+00:00",
+          "bucket_hint": "china_domestic"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-10-22T17:02:00+00:00"
+    },
+    {
+      "company": "Morningstar",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 28,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Morningstar",
+          "signal_type": "funding",
+          "title": "Milvus Surpasses 40,000 GitHub Stars, Reinforcing Leadership in Open-Source Vector Databases",
+          "url": "https://www.morningstar.com/news/pr-newswire/20251218cn51449/milvus-surpasses-40000-github-stars-reinforcing-leadership-in-open-source-vector-databases",
+          "source": "bing_news",
+          "published_at": "2025-12-18T15:59:00+00:00",
+          "bucket_hint": "other"
+        },
+        {
+          "company": "Morningstar",
+          "signal_type": "funding",
+          "title": "KIOXIA AiSAQ Technology Integrated into Milvus Vector Database",
+          "url": "https://www.morningstar.com/news/business-wire/20251216556818/kioxia-aisaq-technology-integrated-into-milvus-vector-database",
+          "source": "bing_news",
+          "published_at": "2025-12-16T16:00:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 2,
+      "latest_signal_at": "2025-12-18T15:59:00+00:00"
+    },
+    {
+      "company": "SaaS startup Prosperr.io",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 25,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "SaaS startup Prosperr.io",
+          "signal_type": "funding",
+          "title": "SaaS startup Prosperr.io raises $4 million in a seed funding round led by Jungle Ventures",
+          "url": "https://www.thehindubusinessline.com/info-tech/saas-startup-prosperrio-raises-4-million-in-a-seed-funding-round-led-by-jungle-ventures/article70428985.ece",
+          "source": "bing_news",
+          "published_at": "2025-12-22T21:51:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-12-22T21:51:00+00:00"
+    },
+    {
+      "company": "Vector databases",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 25,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Vector databases",
+          "signal_type": "funding",
+          "title": "Vector databases: When a girl goes to shop for a scarf",
+          "url": "https://www.dqindia.com/dqdeeptech/vector-databases-when-a-girl-goes-to-shop-for-a-scarf-10910829",
+          "source": "bing_news",
+          "published_at": "2025-12-15T08:15:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-12-15T08:15:00+00:00"
+    },
+    {
+      "company": "From shiny object to sober reality",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 25,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "From shiny object to sober reality",
+          "signal_type": "funding",
+          "title": "From shiny object to sober reality: The vector database story, two years later",
+          "url": "https://venturebeat.com/data-infrastructure/from-shiny-object-to-sober-reality-the-vector-database-story-two-years-later",
+          "source": "bing_news",
+          "published_at": "2025-11-15T16:00:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-11-15T16:00:00+00:00"
+    },
+    {
+      "company": "HariSekhon",
+      "focus_bucket": "other",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 23,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "HariSekhon",
+          "signal_type": "github_adoption",
+          "title": "HariSekhon/Knowledge-Base actively updates search stack",
+          "url": "https://github.com/HariSekhon/Knowledge-Base",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:00:45Z",
+          "bucket_hint": "other",
+          "owner_type": "user",
+          "repo_stars": 285,
+          "repo_forks": 55
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:00:45+00:00"
+    },
+    {
+      "company": "36Kr",
+      "focus_bucket": "china_global",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 8,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "36Kr",
+          "signal_type": "funding",
+          "title": "59起融资，11家闯关IPO，关税风暴下，品牌出海赛道依旧热钱翻涌",
+          "url": "https://www.36kr.com/p/3507426463390601",
+          "source": "bing_news",
+          "published_at": "2025-10-13T11:55:00+00:00",
+          "bucket_hint": "china_global"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-10-13T11:55:00+00:00"
+    },
+    {
+      "company": "Cheque-in",
+      "focus_bucket": "other",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 8,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Cheque-in",
+          "signal_type": "funding",
+          "title": "Cheque-in: 10 ANZ startups raised nearly $193 million this week",
+          "url": "https://www.startupdaily.net/topic/funding/cheque-in-10-anz-startups-raised-nearly-193-million-this-week/",
+          "source": "bing_news",
+          "published_at": "2026-02-12T21:34:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-12T21:34:00+00:00"
+    }
+  ],
+  "canvas_file": "/home/denny/projects/es-pdsa/openclaw-workspace/radar/reports/es-industry-radar-20260225-040154.canvas"
+}

@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "id": "3c6de1b7dd91465d",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 560,
+      "height": 140,
+      "text": "# ES Radar Canvas\\n\\nGenerated: 2026-02-25T01:36:32.171219+00:00\\nTarget Mix: China Domestic 50% / China Global 30% / Other 20%",
+      "color": "5"
+    },
+    {
+      "id": "38743fbb4474f988",
+      "type": "text",
+      "x": 0,
+      "y": 180,
+      "width": 560,
+      "height": 220,
+      "text": "# Focus Mix (Target vs Actual)\\n\\n- China Domestic: target=10 actual=0\\n- China Global: target=6 actual=0\\n- Other: target=4 actual=0",
+      "color": "4"
+    },
+    {
+      "id": "36ab4aaa56c8fea2",
+      "type": "text",
+      "x": 600,
+      "y": 180,
+      "width": 560,
+      "height": 260,
+      "text": "# Signal Mix (Priority)\\n",
+      "color": "2"
+    },
+    {
+      "id": "75ebcb361c656225",
+      "type": "text",
+      "x": 0,
+      "y": 430,
+      "width": 560,
+      "height": 220,
+      "text": "# Score Bands (Priority)\\n\\n80-100             [........................]  0 (  0.0%)\\n60-79              [........................]  0 (  0.0%)\\n40-59              [........................]  0 (  0.0%)\\n0-39               [........................]  0 (  0.0%)",
+      "color": "3"
+    },
+    {
+      "id": "af2c7b4ca07ae6c7",
+      "type": "text",
+      "x": 600,
+      "y": 460,
+      "width": 560,
+      "height": 300,
+      "text": "# Top Priority Targets\\n",
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "84896d3e06788462",
+      "fromNode": "3c6de1b7dd91465d",
+      "toNode": "38743fbb4474f988"
+    },
+    {
+      "id": "dc1885915a8902bc",
+      "fromNode": "3c6de1b7dd91465d",
+      "toNode": "36ab4aaa56c8fea2"
+    },
+    {
+      "id": "0e647f28da2af6b6",
+      "fromNode": "38743fbb4474f988",
+      "toNode": "75ebcb361c656225"
+    },
+    {
+      "id": "2092de654fa53d1e",
+      "fromNode": "36ab4aaa56c8fea2",
+      "toNode": "af2c7b4ca07ae6c7"
+    }
+  ]
+}

@@ -1,0 +1,1030 @@
+{
+  "generated_at": "2026-02-25T01:00:05.482120+00:00",
+  "signal_count": 45,
+  "entity_count": 39,
+  "results": [
+    {
+      "company": "koreatest12",
+      "strength_score": 39,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "We noticed active community pain signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "koreatest12",
+          "signal_type": "community_pain",
+          "title": "chore(deps-algo)(deps): bump org.springframework.boot:spring-boot-starter-parent from 3.2.1 to 4.0.2 in /services/omni-algo-service",
+          "url": "https://github.com/koreatest12/cost-data/pull/554",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T00:59:25Z"
+        },
+        {
+          "company": "koreatest12",
+          "signal_type": "community_pain",
+          "title": "chore(deps-cost)(deps): bump org.springframework.boot:spring-boot-starter-parent from 3.2.1 to 4.0.2 in /services/omni-cost-service",
+          "url": "https://github.com/koreatest12/cost-data/pull/555",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T00:59:24Z"
+        },
+        {
+          "company": "koreatest12",
+          "signal_type": "community_pain",
+          "title": "chore(deps-security)(deps): bump org.springframework.boot:spring-boot-starter-parent from 3.2.1 to 4.0.2 in /services/omni-security-service",
+          "url": "https://github.com/koreatest12/cost-data/pull/556",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T00:59:23Z"
+        },
+        {
+          "company": "koreatest12",
+          "signal_type": "community_pain",
+          "title": "chore(deps-job)(deps): bump org.springframework.boot:spring-boot-starter-parent from 3.2.1 to 4.0.2 in /services/omni-job-service",
+          "url": "https://github.com/koreatest12/cost-data/pull/559",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T00:59:19Z"
+        }
+      ],
+      "signal_count": 4,
+      "latest_signal_at": "2026-02-25T00:59:25+00:00"
+    },
+    {
+      "company": "alexzeitgeist",
+      "strength_score": 38,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "alexzeitgeist",
+          "signal_type": "github_adoption",
+          "title": "alexzeitgeist/starred actively updates search stack",
+          "url": "https://github.com/alexzeitgeist/starred",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:55Z"
+        },
+        {
+          "company": "alexzeitgeist",
+          "signal_type": "github_adoption",
+          "title": "alexzeitgeist/starred actively updates search stack",
+          "url": "https://github.com/alexzeitgeist/starred",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:55Z"
+        }
+      ],
+      "signal_count": 2,
+      "latest_signal_at": "2026-02-25T00:59:55+00:00"
+    },
+    {
+      "company": "bdmorin",
+      "strength_score": 38,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "bdmorin",
+          "signal_type": "github_adoption",
+          "title": "bdmorin/ghstars actively updates search stack",
+          "url": "https://github.com/bdmorin/ghstars",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:38Z"
+        },
+        {
+          "company": "bdmorin",
+          "signal_type": "github_adoption",
+          "title": "bdmorin/ghstars actively updates search stack",
+          "url": "https://github.com/bdmorin/ghstars",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:38Z"
+        }
+      ],
+      "signal_count": 2,
+      "latest_signal_at": "2026-02-25T00:59:38+00:00"
+    },
+    {
+      "company": "seshadricloud",
+      "strength_score": 38,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "seshadricloud",
+          "signal_type": "github_adoption",
+          "title": "seshadricloud/Building-a-DevOps-CI-CD-Pipeline-Locally actively updates search stack",
+          "url": "https://github.com/seshadricloud/Building-a-DevOps-CI-CD-Pipeline-Locally",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:32Z"
+        },
+        {
+          "company": "seshadricloud",
+          "signal_type": "github_adoption",
+          "title": "seshadricloud/Building-a-DevOps-CI-CD-Pipeline-Locally actively updates search stack",
+          "url": "https://github.com/seshadricloud/Building-a-DevOps-CI-CD-Pipeline-Locally",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:32Z"
+        }
+      ],
+      "signal_count": 2,
+      "latest_signal_at": "2026-02-25T00:59:32+00:00"
+    },
+    {
+      "company": "svg153",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "svg153",
+          "signal_type": "github_adoption",
+          "title": "svg153/awesome-stars actively updates search stack",
+          "url": "https://github.com/svg153/awesome-stars",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T01:00:02Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T01:00:02+00:00"
+    },
+    {
+      "company": "bramses",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "bramses",
+          "signal_type": "github_adoption",
+          "title": "bramses/awesome-stars actively updates search stack",
+          "url": "https://github.com/bramses/awesome-stars",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:56Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:59:56+00:00"
+    },
+    {
+      "company": "kzndotsh",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "kzndotsh",
+          "signal_type": "github_adoption",
+          "title": "kzndotsh/stars actively updates search stack",
+          "url": "https://github.com/kzndotsh/stars",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:39Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:59:39+00:00"
+    },
+    {
+      "company": "gruckion",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "gruckion",
+          "signal_type": "github_adoption",
+          "title": "gruckion/awesome-stars actively updates search stack",
+          "url": "https://github.com/gruckion/awesome-stars",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:37Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:59:37+00:00"
+    },
+    {
+      "company": "3thr33s",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "3thr33s",
+          "signal_type": "github_adoption",
+          "title": "3thr33s/starred actively updates search stack",
+          "url": "https://github.com/3thr33s/starred",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:34Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:59:34+00:00"
+    },
+    {
+      "company": "goodjack",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "goodjack",
+          "signal_type": "github_adoption",
+          "title": "goodjack/stars actively updates search stack",
+          "url": "https://github.com/goodjack/stars",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:33Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:59:33+00:00"
+    },
+    {
+      "company": "onjin",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "onjin",
+          "signal_type": "github_adoption",
+          "title": "onjin/stars actively updates search stack",
+          "url": "https://github.com/onjin/stars",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:32Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:59:32+00:00"
+    },
+    {
+      "company": "matyo91",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "matyo91",
+          "signal_type": "github_adoption",
+          "title": "matyo91/awesome-stars actively updates search stack",
+          "url": "https://github.com/matyo91/awesome-stars",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:10Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:59:10+00:00"
+    },
+    {
+      "company": "pstanton237",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "pstanton237",
+          "signal_type": "github_adoption",
+          "title": "pstanton237/awesome-stars actively updates search stack",
+          "url": "https://github.com/pstanton237/awesome-stars",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:02Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:59:02+00:00"
+    },
+    {
+      "company": "rapidrabbit76",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "rapidrabbit76",
+          "signal_type": "github_adoption",
+          "title": "rapidrabbit76/awesome-stars actively updates search stack",
+          "url": "https://github.com/rapidrabbit76/awesome-stars",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:58:44Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:58:44+00:00"
+    },
+    {
+      "company": "viktorbezdek",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "viktorbezdek",
+          "signal_type": "github_adoption",
+          "title": "viktorbezdek/awesome-github-projects actively updates search stack",
+          "url": "https://github.com/viktorbezdek/awesome-github-projects",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:58:39Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:58:39+00:00"
+    },
+    {
+      "company": "eczsavra",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "eczsavra",
+          "signal_type": "github_adoption",
+          "title": "eczsavra/opas-mono actively updates search stack",
+          "url": "https://github.com/eczsavra/opas-mono",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:58:37Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:58:37+00:00"
+    },
+    {
+      "company": "iberflow",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "iberflow",
+          "signal_type": "github_adoption",
+          "title": "iberflow/my-stars actively updates search stack",
+          "url": "https://github.com/iberflow/my-stars",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:58:22Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:58:22+00:00"
+    },
+    {
+      "company": "ryankanno",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "ryankanno",
+          "signal_type": "github_adoption",
+          "title": "ryankanno/my-awesome-stars actively updates search stack",
+          "url": "https://github.com/ryankanno/my-awesome-stars",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T00:59:57Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:59:57+00:00"
+    },
+    {
+      "company": "Jocker-123",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "Jocker-123",
+          "signal_type": "github_adoption",
+          "title": "Jocker-123/ChatQ actively updates search stack",
+          "url": "https://github.com/Jocker-123/ChatQ",
+          "source": "github_repo_search",
+          "published_at": "2026-02-24T22:56:34Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T22:56:34+00:00"
+    },
+    {
+      "company": "arome3",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "arome3",
+          "signal_type": "github_adoption",
+          "title": "arome3/vigil actively updates search stack",
+          "url": "https://github.com/arome3/vigil",
+          "source": "github_repo_search",
+          "published_at": "2026-02-24T11:47:56Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T11:47:56+00:00"
+    },
+    {
+      "company": "fisa06-team-binary",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "fisa06-team-binary",
+          "signal_type": "github_adoption",
+          "title": "fisa06-team-binary/stock-rag-platform actively updates search stack",
+          "url": "https://github.com/fisa06-team-binary/stock-rag-platform",
+          "source": "github_repo_search",
+          "published_at": "2026-02-23T05:42:17Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-23T05:42:17+00:00"
+    },
+    {
+      "company": "liu-xiao-guo",
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "liu-xiao-guo",
+          "signal_type": "github_adoption",
+          "title": "liu-xiao-guo/es_vector_search_demo actively updates search stack",
+          "url": "https://github.com/liu-xiao-guo/es_vector_search_demo",
+          "source": "github_repo_search",
+          "published_at": "2026-02-22T04:29:25Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-22T04:29:25+00:00"
+    },
+    {
+      "company": "danielscholl-osdu",
+      "strength_score": 30,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "We noticed active community pain signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "danielscholl-osdu",
+          "signal_type": "community_pain",
+          "title": "chore(squad): clean up config files and update project context",
+          "url": "https://github.com/danielscholl-osdu/cimpl-azd/pull/128",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T01:00:08Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T01:00:08+00:00"
+    },
+    {
+      "company": "UCLALibrary",
+      "strength_score": 30,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "We noticed active community pain signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "UCLALibrary",
+          "signal_type": "community_pain",
+          "title": "feat: Add PageUsingDigitalCollections",
+          "url": "https://github.com/UCLALibrary/ucla-library-website-components/pull/907",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T00:59:31Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:59:31+00:00"
+    },
+    {
+      "company": "bravecobra",
+      "strength_score": 30,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "We noticed active community pain signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "bravecobra",
+          "signal_type": "community_pain",
+          "title": "Dependency Dashboard",
+          "url": "https://github.com/bravecobra/k8s-dev-infrastructure/issues/182",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T00:59:09Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:59:09+00:00"
+    },
+    {
+      "company": "elastic",
+      "strength_score": 30,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "We noticed active community pain signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "elastic",
+          "signal_type": "community_pain",
+          "title": "[DOCS] Changelog bundle profiles",
+          "url": "https://github.com/elastic/docs-builder/pull/2783",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T00:57:05Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:57:05+00:00"
+    },
+    {
+      "company": "pooneyy",
+      "strength_score": 30,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "We noticed active community pain signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "pooneyy",
+          "signal_type": "community_pain",
+          "title": "Dependency Dashboard",
+          "url": "https://github.com/pooneyy/1Panel-Appstore/issues/4",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T00:56:45Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:56:45+00:00"
+    },
+    {
+      "company": "epistola-app",
+      "strength_score": 30,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "We noticed active community pain signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "epistola-app",
+          "signal_type": "community_pain",
+          "title": "fix(deps): update all non-major dependencies",
+          "url": "https://github.com/epistola-app/epistola-suite/pull/173",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T00:56:16Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:56:16+00:00"
+    },
+    {
+      "company": "JVinay7",
+      "strength_score": 30,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "JVinay7",
+          "signal_type": "github_adoption",
+          "title": "JVinay7/Hackthon actively updates search stack",
+          "url": "https://github.com/JVinay7/Hackthon",
+          "source": "github_repo_search",
+          "published_at": "2026-02-11T11:10:10Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-11T11:10:10+00:00"
+    },
+    {
+      "company": "Talib6509",
+      "strength_score": 30,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "Talib6509",
+          "signal_type": "github_adoption",
+          "title": "Talib6509/agentic_rag actively updates search stack",
+          "url": "https://github.com/Talib6509/agentic_rag",
+          "source": "github_repo_search",
+          "published_at": "2026-02-10T19:05:50Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-10T19:05:50+00:00"
+    },
+    {
+      "company": "prrao87",
+      "strength_score": 30,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "prrao87",
+          "signal_type": "github_adoption",
+          "title": "prrao87/lancedb-study actively updates search stack",
+          "url": "https://github.com/prrao87/lancedb-study",
+          "source": "github_repo_search",
+          "published_at": "2026-02-08T19:46:11Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-08T19:46:11+00:00"
+    },
+    {
+      "company": "ic-timon",
+      "strength_score": 30,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "ic-timon",
+          "signal_type": "github_adoption",
+          "title": "ic-timon/da-hvri actively updates search stack",
+          "url": "https://github.com/ic-timon/da-hvri",
+          "source": "github_repo_search",
+          "published_at": "2026-02-08T09:46:38Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-08T09:46:38+00:00"
+    },
+    {
+      "company": "DareDev256",
+      "strength_score": 30,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "DareDev256",
+          "signal_type": "github_adoption",
+          "title": "DareDev256/vector-vs-keyword-search actively updates search stack",
+          "url": "https://github.com/DareDev256/vector-vs-keyword-search",
+          "source": "github_repo_search",
+          "published_at": "2026-02-05T20:02:56Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-05T20:02:56+00:00"
+    },
+    {
+      "company": "antima121-bit",
+      "strength_score": 30,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active github adoption signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "antima121-bit",
+          "signal_type": "github_adoption",
+          "title": "antima121-bit/elastic-agent-search actively updates search stack",
+          "url": "https://github.com/antima121-bit/elastic-agent-search",
+          "source": "github_repo_search",
+          "published_at": "2026-02-05T09:34:00Z"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-05T09:34:00+00:00"
+    },
+    {
+      "company": "Exclusive",
+      "strength_score": 25,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active funding signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "Exclusive",
+          "signal_type": "funding",
+          "title": "Exclusive: Kris@Work Bags $3 Mn To Offer AI-Powered SaaS Platform For GTM Teams",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e4997eeb24121810e5c39dc438c11&url=https%3a%2f%2finc42.com%2fbuzz%2fexclusive-kriswork-bags-3-mn-to-offer-ai-powered-saas-platform-for-gtm-teams%2f&c=8875643987158126588&mkt=en-sg",
+          "source": "bing_news",
+          "published_at": "2026-02-23T18:56:00+00:00"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-23T18:56:00+00:00"
+    },
+    {
+      "company": "Latest SaaS News",
+      "strength_score": 20,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active funding signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "Latest SaaS News",
+          "signal_type": "funding",
+          "title": "Latest SaaS News: Trends, Funding, and Expert Analysis",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e4997eeb24121810e5c39dc438c11&url=https%3a%2f%2ftechannouncer.com%2flatest-saas-news-trends-funding-and-expert-analysis%2f&c=6953476055228648817&mkt=en-sg",
+          "source": "bing_news",
+          "published_at": "2026-02-11T22:01:00+00:00"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-11T22:01:00+00:00"
+    },
+    {
+      "company": "Cheque-in",
+      "strength_score": 20,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active funding signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "Cheque-in",
+          "signal_type": "funding",
+          "title": "Cheque-in: 10 ANZ startups raised nearly $193 million this week",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e4997eeb24121810e5c39dc438c11&url=https%3a%2f%2fwww.startupdaily.net%2ftopic%2ffunding%2fcheque-in-10-anz-startups-raised-nearly-193-million-this-week%2f&c=1501333629236068107&mkt=en-sg",
+          "source": "bing_news",
+          "published_at": "2026-02-12T21:34:00+00:00"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-12T21:34:00+00:00"
+    },
+    {
+      "company": "SaaS startup Prosperr.io",
+      "strength_score": 15,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active funding signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "SaaS startup Prosperr.io",
+          "signal_type": "funding",
+          "title": "SaaS startup Prosperr.io raises $4 million in a seed funding round led by Jungle Ventures",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e4997eeb24121810e5c39dc438c11&url=https%3a%2f%2fwww.thehindubusinessline.com%2finfo-tech%2fsaas-startup-prosperrio-raises-4-million-in-a-seed-funding-round-led-by-jungle-ventures%2farticle70428985.ece&c=14124918427716870137&mkt=en-sg",
+          "source": "bing_news",
+          "published_at": "2025-12-22T21:51:00+00:00"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-12-22T21:51:00+00:00"
+    },
+    {
+      "company": "Bing",
+      "strength_score": 15,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "We noticed active funding signals and can help migrate or offload search workloads to managed cloud Elasticsearch with lower ops overhead.",
+      "evidence": [
+        {
+          "company": "Bing",
+          "signal_type": "funding",
+          "title": "KIOXIA AiSAQ Technology Integrated into Milvus Vector Database",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e499702f4438fba948f7d547bb93b&url=https%3a%2f%2fwww.morningstar.com%2fnews%2fbusiness-wire%2f20251216556818%2fkioxia-aisaq-technology-integrated-into-milvus-vector-database&c=3299239047804008675&mkt=en-sg",
+          "source": "bing_news",
+          "published_at": "2025-12-16T16:00:00+00:00"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-12-16T16:00:00+00:00"
+    }
+  ]
+}

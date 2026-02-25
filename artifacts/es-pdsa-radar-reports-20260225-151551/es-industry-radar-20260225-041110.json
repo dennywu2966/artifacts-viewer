@@ -1,0 +1,1966 @@
+{
+  "generated_at": "2026-02-25T04:11:10.481243+00:00",
+  "signal_count": 43,
+  "entity_count": 43,
+  "mix_policy": {
+    "china_domestic": 0.5,
+    "china_global": 0.3,
+    "other": 0.2
+  },
+  "mix_target_counts": {
+    "china_domestic": 10,
+    "china_global": 6,
+    "other": 4
+  },
+  "mix_actual_counts": {
+    "china_domestic": 8,
+    "china_global": 6,
+    "other": 6
+  },
+  "mix_gap_counts": {
+    "china_domestic": 2,
+    "china_global": 0,
+    "other": 0
+  },
+  "insights": {
+    "focus_distribution_all": {
+      "china_domestic": 8,
+      "china_global": 10,
+      "other": 25
+    },
+    "focus_distribution_priority": {
+      "china_domestic": 8,
+      "china_global": 6,
+      "other": 6
+    },
+    "signal_distribution_priority": {
+      "community_pain": 11,
+      "github_adoption": 9
+    },
+    "entity_distribution_priority": {
+      "enterprise_project": 12,
+      "unknown": 5,
+      "individual": 3
+    },
+    "score_bands_priority": {
+      "80-100": 0,
+      "60-79": 0,
+      "40-59": 13,
+      "0-39": 7
+    }
+  },
+  "priority_targets": [
+    {
+      "company": "valitydev",
+      "focus_bucket": "china_domestic",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 48,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "valitydev",
+          "signal_type": "community_pain",
+          "title": "Update all non-major maven dependencies",
+          "url": "https://github.com/valitydev/file-storage/pull/17",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T01:07:02Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T01:07:02+00:00"
+    },
+    {
+      "company": "grafana",
+      "focus_bucket": "china_domestic",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 48,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "grafana",
+          "signal_type": "community_pain",
+          "title": "fix(deps): update module github.com/open-telemetry/opentelemetry-collector-contrib/extension/bearertokenauthextension to v0.107.0 [security]",
+          "url": "https://github.com/grafana/agent/pull/7218",
+          "source": "github_issue_search",
+          "published_at": "2026-02-24T15:26:19Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T15:26:19+00:00"
+    },
+    {
+      "company": "apache",
+      "focus_bucket": "china_domestic",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 48,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "apache",
+          "signal_type": "community_pain",
+          "title": "Connector Ecosystem Roadmap: tracking 120+ connector targets across databases, cloud, IoT, and observability",
+          "url": "https://github.com/apache/iggy/issues/2753",
+          "source": "github_issue_search",
+          "published_at": "2026-02-18T12:16:02Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-18T12:16:02+00:00"
+    },
+    {
+      "company": "bjorncs",
+      "focus_bucket": "china_domestic",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 48,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "bjorncs",
+          "signal_type": "community_pain",
+          "title": "Update aws-java-sdk monorepo to v1.12.797",
+          "url": "https://github.com/bjorncs/vespa/pull/6",
+          "source": "github_issue_search",
+          "published_at": "2026-02-22T13:03:49Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-22T13:03:49+00:00"
+    },
+    {
+      "company": "vitalets",
+      "focus_bucket": "china_domestic",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 38,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "vitalets",
+          "signal_type": "community_pain",
+          "title": "New daily trending repos in Java",
+          "url": "https://github.com/vitalets/github-trending-repos/issues/8",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T00:09:04Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:09:04+00:00"
+    },
+    {
+      "company": "langgenius",
+      "focus_bucket": "china_domestic",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 38,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "langgenius",
+          "signal_type": "community_pain",
+          "title": "vision mode gpt 5.2 don't work",
+          "url": "https://github.com/langgenius/dify/issues/32517",
+          "source": "github_issue_search",
+          "published_at": "2026-02-24T14:46:26Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T14:46:26+00:00"
+    },
+    {
+      "company": "local-motion",
+      "focus_bucket": "china_domestic",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 26,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "local-motion",
+          "signal_type": "community_pain",
+          "title": "Update aws-java-sdk monorepo to v1.12.797",
+          "url": "https://github.com/local-motion/smokefree-initiative-service/pull/203",
+          "source": "github_issue_search",
+          "published_at": "2026-02-22T13:19:36Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-22T13:19:36+00:00"
+    },
+    {
+      "company": "it-at-m",
+      "focus_bucket": "china_domestic",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 21,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "it-at-m",
+          "signal_type": "community_pain",
+          "title": "Update dependency com.amazonaws:aws-java-sdk-s3 to v1.12.797 (dev)",
+          "url": "https://github.com/it-at-m/kobit-backend/pull/63",
+          "source": "github_issue_search",
+          "published_at": "2026-02-13T19:35:22Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-13T19:35:22+00:00"
+    },
+    {
+      "company": "ICIJ",
+      "focus_bucket": "china_global",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 50,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "ICIJ",
+          "signal_type": "github_adoption",
+          "title": "ICIJ/datashare actively updates search stack",
+          "url": "https://github.com/ICIJ/datashare",
+          "source": "github_repo_search",
+          "published_at": "2026-02-24T10:48:03Z",
+          "bucket_hint": "china_global",
+          "owner_type": "organization"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T10:48:03+00:00"
+    },
+    {
+      "company": "recepbaykara",
+      "focus_bucket": "china_global",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 40,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "recepbaykara",
+          "signal_type": "github_adoption",
+          "title": "recepbaykara/fraud-guard-plugin-kong actively updates search stack",
+          "url": "https://github.com/recepbaykara/fraud-guard-plugin-kong",
+          "source": "github_repo_search",
+          "published_at": "2026-02-24T12:49:42Z",
+          "bucket_hint": "china_global",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T12:49:42+00:00"
+    },
+    {
+      "company": "liangruibupt",
+      "focus_bucket": "china_global",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 40,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "liangruibupt",
+          "signal_type": "github_adoption",
+          "title": "liangruibupt/aws-is-how actively updates search stack",
+          "url": "https://github.com/liangruibupt/aws-is-how",
+          "source": "github_repo_search",
+          "published_at": "2026-02-24T02:10:07Z",
+          "bucket_hint": "china_global",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T02:10:07+00:00"
+    },
+    {
+      "company": "jhengy",
+      "focus_bucket": "china_global",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 35,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "jhengy",
+          "signal_type": "community_pain",
+          "title": "Daily Content Summary 2025-05-02",
+          "url": "https://github.com/jhengy/content-aggregator/issues/97",
+          "source": "github_issue_search",
+          "published_at": "2025-05-02T08:50:05Z",
+          "bucket_hint": "china_global",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-05-02T08:50:05+00:00"
+    },
+    {
+      "company": "DanushVagicharla",
+      "focus_bucket": "china_global",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 25,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "DanushVagicharla",
+          "signal_type": "community_pain",
+          "title": "dummy_data",
+          "url": "https://github.com/DanushVagicharla/hexhackathon/issues/1",
+          "source": "github_issue_search",
+          "published_at": "2025-03-08T09:03:25Z",
+          "bucket_hint": "china_global",
+          "owner_type": "",
+          "issue_user_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-03-08T09:03:25+00:00"
+    },
+    {
+      "company": "Saubhagya7developer",
+      "focus_bucket": "china_global",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 28,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Saubhagya7developer",
+          "signal_type": "github_adoption",
+          "title": "Saubhagya7developer/FinLedger actively updates search stack",
+          "url": "https://github.com/Saubhagya7developer/FinLedger",
+          "source": "github_repo_search",
+          "published_at": "2026-02-24T16:14:40Z",
+          "bucket_hint": "china_global",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T16:14:40+00:00"
+    },
+    {
+      "company": "Pet-Community-sw",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Pet-Community-sw",
+          "signal_type": "github_adoption",
+          "title": "Pet-Community-sw/Pet-Community-Api actively updates search stack",
+          "url": "https://github.com/Pet-Community-sw/Pet-Community-Api",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:10:37Z",
+          "bucket_hint": "other",
+          "owner_type": "organization"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:10:37+00:00"
+    },
+    {
+      "company": "kindling-sh",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "kindling-sh",
+          "signal_type": "github_adoption",
+          "title": "kindling-sh/kindling actively updates search stack",
+          "url": "https://github.com/kindling-sh/kindling",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:09:52Z",
+          "bucket_hint": "other",
+          "owner_type": "organization"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:09:52+00:00"
+    },
+    {
+      "company": "rami-aouinti",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "rami-aouinti",
+          "signal_type": "github_adoption",
+          "title": "rami-aouinti/platform-symfony actively updates search stack",
+          "url": "https://github.com/rami-aouinti/platform-symfony",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:09:05Z",
+          "bucket_hint": "other",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:09:05+00:00"
+    },
+    {
+      "company": "wso2",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "wso2",
+          "signal_type": "github_adoption",
+          "title": "wso2/integration-control-plane actively updates search stack",
+          "url": "https://github.com/wso2/integration-control-plane",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:03:31Z",
+          "bucket_hint": "other",
+          "owner_type": "organization"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:03:31+00:00"
+    },
+    {
+      "company": "opensearch-project",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "opensearch-project",
+          "signal_type": "github_adoption",
+          "title": "opensearch-project/sql actively updates search stack",
+          "url": "https://github.com/opensearch-project/sql",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:02:00Z",
+          "bucket_hint": "other",
+          "owner_type": "organization"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:02:00+00:00"
+    },
+    {
+      "company": "mitre",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 40,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "mitre",
+          "signal_type": "community_pain",
+          "title": "Build(deps): Bump @aws-sdk/client-config-service from 3.996.0 to 3.997.0",
+          "url": "https://github.com/mitre/heimdall2/pull/7721",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T04:09:53Z",
+          "bucket_hint": "other",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:09:53+00:00"
+    }
+  ],
+  "results": [
+    {
+      "company": "ICIJ",
+      "focus_bucket": "china_global",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 50,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "ICIJ",
+          "signal_type": "github_adoption",
+          "title": "ICIJ/datashare actively updates search stack",
+          "url": "https://github.com/ICIJ/datashare",
+          "source": "github_repo_search",
+          "published_at": "2026-02-24T10:48:03Z",
+          "bucket_hint": "china_global",
+          "owner_type": "organization"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T10:48:03+00:00"
+    },
+    {
+      "company": "valitydev",
+      "focus_bucket": "china_domestic",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 48,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "valitydev",
+          "signal_type": "community_pain",
+          "title": "Update all non-major maven dependencies",
+          "url": "https://github.com/valitydev/file-storage/pull/17",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T01:07:02Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T01:07:02+00:00"
+    },
+    {
+      "company": "grafana",
+      "focus_bucket": "china_domestic",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 48,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "grafana",
+          "signal_type": "community_pain",
+          "title": "fix(deps): update module github.com/open-telemetry/opentelemetry-collector-contrib/extension/bearertokenauthextension to v0.107.0 [security]",
+          "url": "https://github.com/grafana/agent/pull/7218",
+          "source": "github_issue_search",
+          "published_at": "2026-02-24T15:26:19Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T15:26:19+00:00"
+    },
+    {
+      "company": "apache",
+      "focus_bucket": "china_domestic",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 48,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "apache",
+          "signal_type": "community_pain",
+          "title": "Connector Ecosystem Roadmap: tracking 120+ connector targets across databases, cloud, IoT, and observability",
+          "url": "https://github.com/apache/iggy/issues/2753",
+          "source": "github_issue_search",
+          "published_at": "2026-02-18T12:16:02Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-18T12:16:02+00:00"
+    },
+    {
+      "company": "bjorncs",
+      "focus_bucket": "china_domestic",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 48,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "bjorncs",
+          "signal_type": "community_pain",
+          "title": "Update aws-java-sdk monorepo to v1.12.797",
+          "url": "https://github.com/bjorncs/vespa/pull/6",
+          "source": "github_issue_search",
+          "published_at": "2026-02-22T13:03:49Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-22T13:03:49+00:00"
+    },
+    {
+      "company": "Pet-Community-sw",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Pet-Community-sw",
+          "signal_type": "github_adoption",
+          "title": "Pet-Community-sw/Pet-Community-Api actively updates search stack",
+          "url": "https://github.com/Pet-Community-sw/Pet-Community-Api",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:10:37Z",
+          "bucket_hint": "other",
+          "owner_type": "organization"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:10:37+00:00"
+    },
+    {
+      "company": "kindling-sh",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "kindling-sh",
+          "signal_type": "github_adoption",
+          "title": "kindling-sh/kindling actively updates search stack",
+          "url": "https://github.com/kindling-sh/kindling",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:09:52Z",
+          "bucket_hint": "other",
+          "owner_type": "organization"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:09:52+00:00"
+    },
+    {
+      "company": "rami-aouinti",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "rami-aouinti",
+          "signal_type": "github_adoption",
+          "title": "rami-aouinti/platform-symfony actively updates search stack",
+          "url": "https://github.com/rami-aouinti/platform-symfony",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:09:05Z",
+          "bucket_hint": "other",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:09:05+00:00"
+    },
+    {
+      "company": "wso2",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "wso2",
+          "signal_type": "github_adoption",
+          "title": "wso2/integration-control-plane actively updates search stack",
+          "url": "https://github.com/wso2/integration-control-plane",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:03:31Z",
+          "bucket_hint": "other",
+          "owner_type": "organization"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:03:31+00:00"
+    },
+    {
+      "company": "opensearch-project",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 45,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "opensearch-project",
+          "signal_type": "github_adoption",
+          "title": "opensearch-project/sql actively updates search stack",
+          "url": "https://github.com/opensearch-project/sql",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:02:00Z",
+          "bucket_hint": "other",
+          "owner_type": "organization"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:02:00+00:00"
+    },
+    {
+      "company": "mitre",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 40,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "mitre",
+          "signal_type": "community_pain",
+          "title": "Build(deps): Bump @aws-sdk/client-config-service from 3.996.0 to 3.997.0",
+          "url": "https://github.com/mitre/heimdall2/pull/7721",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T04:09:53Z",
+          "bucket_hint": "other",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:09:53+00:00"
+    },
+    {
+      "company": "recepbaykara",
+      "focus_bucket": "china_global",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 40,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "recepbaykara",
+          "signal_type": "github_adoption",
+          "title": "recepbaykara/fraud-guard-plugin-kong actively updates search stack",
+          "url": "https://github.com/recepbaykara/fraud-guard-plugin-kong",
+          "source": "github_repo_search",
+          "published_at": "2026-02-24T12:49:42Z",
+          "bucket_hint": "china_global",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T12:49:42+00:00"
+    },
+    {
+      "company": "liangruibupt",
+      "focus_bucket": "china_global",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 40,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "liangruibupt",
+          "signal_type": "github_adoption",
+          "title": "liangruibupt/aws-is-how actively updates search stack",
+          "url": "https://github.com/liangruibupt/aws-is-how",
+          "source": "github_repo_search",
+          "published_at": "2026-02-24T02:10:07Z",
+          "bucket_hint": "china_global",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T02:10:07+00:00"
+    },
+    {
+      "company": "vitalets",
+      "focus_bucket": "china_domestic",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 38,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "vitalets",
+          "signal_type": "community_pain",
+          "title": "New daily trending repos in Java",
+          "url": "https://github.com/vitalets/github-trending-repos/issues/8",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T00:09:04Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T00:09:04+00:00"
+    },
+    {
+      "company": "langgenius",
+      "focus_bucket": "china_domestic",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 38,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "langgenius",
+          "signal_type": "community_pain",
+          "title": "vision mode gpt 5.2 don't work",
+          "url": "https://github.com/langgenius/dify/issues/32517",
+          "source": "github_issue_search",
+          "published_at": "2026-02-24T14:46:26Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T14:46:26+00:00"
+    },
+    {
+      "company": "Ventureburn",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 35,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Ventureburn",
+          "signal_type": "funding",
+          "title": "SurrealDB Raises $23M to Scale AI-Native Multi-Model Database",
+          "url": "https://ventureburn.com/surrealdb-raises-23m/",
+          "source": "bing_news",
+          "published_at": "2026-02-17T17:03:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-17T17:03:00+00:00"
+    },
+    {
+      "company": "jhengy",
+      "focus_bucket": "china_global",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 35,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "jhengy",
+          "signal_type": "community_pain",
+          "title": "Daily Content Summary 2025-05-02",
+          "url": "https://github.com/jhengy/content-aggregator/issues/97",
+          "source": "github_issue_search",
+          "published_at": "2025-05-02T08:50:05Z",
+          "bucket_hint": "china_global",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-05-02T08:50:05+00:00"
+    },
+    {
+      "company": "YdvAkash",
+      "focus_bucket": "other",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "YdvAkash",
+          "signal_type": "github_adoption",
+          "title": "YdvAkash/ai-log-analyzer actively updates search stack",
+          "url": "https://github.com/YdvAkash/ai-log-analyzer",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:10:03Z",
+          "bucket_hint": "other",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:10:03+00:00"
+    },
+    {
+      "company": "lucascatanio",
+      "focus_bucket": "other",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "lucascatanio",
+          "signal_type": "github_adoption",
+          "title": "lucascatanio/distributed-ecommerce-backend actively updates search stack",
+          "url": "https://github.com/lucascatanio/distributed-ecommerce-backend",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:09:24Z",
+          "bucket_hint": "other",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:09:24+00:00"
+    },
+    {
+      "company": "afuri",
+      "focus_bucket": "other",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "afuri",
+          "signal_type": "github_adoption",
+          "title": "afuri/ni_site actively updates search stack",
+          "url": "https://github.com/afuri/ni_site",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:08:56Z",
+          "bucket_hint": "other",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:08:56+00:00"
+    },
+    {
+      "company": "designinlife",
+      "focus_bucket": "other",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "designinlife",
+          "signal_type": "github_adoption",
+          "title": "designinlife/version-checker actively updates search stack",
+          "url": "https://github.com/designinlife/version-checker",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:02:19Z",
+          "bucket_hint": "other",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:02:19+00:00"
+    },
+    {
+      "company": "EdomG",
+      "focus_bucket": "other",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "EdomG",
+          "signal_type": "github_adoption",
+          "title": "EdomG/Demo-repo actively updates search stack",
+          "url": "https://github.com/EdomG/Demo-repo",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T03:59:27Z",
+          "bucket_hint": "other",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T03:59:27+00:00"
+    },
+    {
+      "company": "eczsavra",
+      "focus_bucket": "other",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "eczsavra",
+          "signal_type": "github_adoption",
+          "title": "eczsavra/opas-mono actively updates search stack",
+          "url": "https://github.com/eczsavra/opas-mono",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T03:58:43Z",
+          "bucket_hint": "other",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T03:58:43+00:00"
+    },
+    {
+      "company": "ashkankamyab",
+      "focus_bucket": "other",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 35,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "ashkankamyab",
+          "signal_type": "github_adoption",
+          "title": "ashkankamyab/CN-Asset-Manager actively updates search stack",
+          "url": "https://github.com/ashkankamyab/CN-Asset-Manager",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T03:53:03Z",
+          "bucket_hint": "other",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T03:53:03+00:00"
+    },
+    {
+      "company": "jgeofil",
+      "focus_bucket": "other",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 30,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "jgeofil",
+          "signal_type": "community_pain",
+          "title": "Sync source: New entry for app creation",
+          "url": "https://github.com/jgeofil/dify/pull/1",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T04:03:13Z",
+          "bucket_hint": "other",
+          "owner_type": "",
+          "issue_user_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:03:13+00:00"
+    },
+    {
+      "company": "Saubhagya7developer",
+      "focus_bucket": "china_global",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 28,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Saubhagya7developer",
+          "signal_type": "github_adoption",
+          "title": "Saubhagya7developer/FinLedger actively updates search stack",
+          "url": "https://github.com/Saubhagya7developer/FinLedger",
+          "source": "github_repo_search",
+          "published_at": "2026-02-24T16:14:40Z",
+          "bucket_hint": "china_global",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T16:14:40+00:00"
+    },
+    {
+      "company": "christopher639",
+      "focus_bucket": "china_global",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 28,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "christopher639",
+          "signal_type": "github_adoption",
+          "title": "christopher639/FARSI actively updates search stack",
+          "url": "https://github.com/christopher639/FARSI",
+          "source": "github_repo_search",
+          "published_at": "2026-02-24T07:31:42Z",
+          "bucket_hint": "china_global",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-24T07:31:42+00:00"
+    },
+    {
+      "company": "shubho-acc",
+      "focus_bucket": "china_global",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 28,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "shubho-acc",
+          "signal_type": "github_adoption",
+          "title": "shubho-acc/cross-border-payment actively updates search stack",
+          "url": "https://github.com/shubho-acc/cross-border-payment",
+          "source": "github_repo_search",
+          "published_at": "2026-02-23T15:10:15Z",
+          "bucket_hint": "china_global",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-23T15:10:15+00:00"
+    },
+    {
+      "company": "Rupa-Rd",
+      "focus_bucket": "china_global",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 28,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Rupa-Rd",
+          "signal_type": "github_adoption",
+          "title": "Rupa-Rd/K-Anonymist actively updates search stack",
+          "url": "https://github.com/Rupa-Rd/K-Anonymist",
+          "source": "github_repo_search",
+          "published_at": "2026-02-23T15:03:07Z",
+          "bucket_hint": "china_global",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-23T15:03:07+00:00"
+    },
+    {
+      "company": "local-motion",
+      "focus_bucket": "china_domestic",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 26,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "local-motion",
+          "signal_type": "community_pain",
+          "title": "Update aws-java-sdk monorepo to v1.12.797",
+          "url": "https://github.com/local-motion/smokefree-initiative-service/pull/203",
+          "source": "github_issue_search",
+          "published_at": "2026-02-22T13:19:36Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-22T13:19:36+00:00"
+    },
+    {
+      "company": "SaaS startup Prosperr.io",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 25,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "SaaS startup Prosperr.io",
+          "signal_type": "funding",
+          "title": "SaaS startup Prosperr.io raises $4 million in a seed funding round led by Jungle Ventures",
+          "url": "https://www.thehindubusinessline.com/info-tech/saas-startup-prosperrio-raises-4-million-in-a-seed-funding-round-led-by-jungle-ventures/article70428985.ece",
+          "source": "bing_news",
+          "published_at": "2025-12-22T21:51:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-12-22T21:51:00+00:00"
+    },
+    {
+      "company": "From shiny object to sober reality",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 25,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "From shiny object to sober reality",
+          "signal_type": "funding",
+          "title": "From shiny object to sober reality: The vector database story, two years later",
+          "url": "https://venturebeat.com/ai/from-shiny-object-to-sober-reality-the-vector-database-story-two-years-later",
+          "source": "bing_news",
+          "published_at": "2025-11-15T16:00:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-11-15T16:00:00+00:00"
+    },
+    {
+      "company": "Do vector-native databases beat add",
+      "focus_bucket": "other",
+      "entity_type": "enterprise_project",
+      "entity_priority": 10,
+      "strength_score": 25,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Do vector-native databases beat add",
+          "signal_type": "funding",
+          "title": "Do vector-native databases beat add-ons for AI applications?",
+          "url": "https://www.infoworld.com/article/4060211/do-vector-native-databases-beat-add-ons-for-ai-applications.html",
+          "source": "bing_news",
+          "published_at": "2025-09-22T02:01:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-09-22T02:01:00+00:00"
+    },
+    {
+      "company": "DanushVagicharla",
+      "focus_bucket": "china_global",
+      "entity_type": "unknown",
+      "entity_priority": 0,
+      "strength_score": 25,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "DanushVagicharla",
+          "signal_type": "community_pain",
+          "title": "dummy_data",
+          "url": "https://github.com/DanushVagicharla/hexhackathon/issues/1",
+          "source": "github_issue_search",
+          "published_at": "2025-03-08T09:03:25Z",
+          "bucket_hint": "china_global",
+          "owner_type": "",
+          "issue_user_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-03-08T09:03:25+00:00"
+    },
+    {
+      "company": "Shashank1766",
+      "focus_bucket": "other",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 23,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Shashank1766",
+          "signal_type": "github_adoption",
+          "title": "Shashank1766/Shashank1766 actively updates search stack",
+          "url": "https://github.com/Shashank1766/Shashank1766",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:10:54Z",
+          "bucket_hint": "other",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:10:54+00:00"
+    },
+    {
+      "company": "hisham2k9",
+      "focus_bucket": "other",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 23,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "hisham2k9",
+          "signal_type": "github_adoption",
+          "title": "hisham2k9/hisham2k9 actively updates search stack",
+          "url": "https://github.com/hisham2k9/hisham2k9",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:09:35Z",
+          "bucket_hint": "other",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:09:35+00:00"
+    },
+    {
+      "company": "mani1261790",
+      "focus_bucket": "other",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 23,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "mani1261790",
+          "signal_type": "github_adoption",
+          "title": "mani1261790/Noema actively updates search stack",
+          "url": "https://github.com/mani1261790/Noema",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T04:06:46Z",
+          "bucket_hint": "other",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:06:46+00:00"
+    },
+    {
+      "company": "godspeed6969",
+      "focus_bucket": "other",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 23,
+      "demand_signals": [
+        "github_adoption"
+      ],
+      "possible_contacts": [
+        "Staff Engineer",
+        "Platform Lead",
+        "CTO"
+      ],
+      "outreach_hook": "Detected github adoption signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "godspeed6969",
+          "signal_type": "github_adoption",
+          "title": "godspeed6969/ai-playground actively updates search stack",
+          "url": "https://github.com/godspeed6969/ai-playground",
+          "source": "github_repo_search",
+          "published_at": "2026-02-25T03:53:43Z",
+          "bucket_hint": "other",
+          "owner_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T03:53:43+00:00"
+    },
+    {
+      "company": "it-at-m",
+      "focus_bucket": "china_domestic",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 21,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "it-at-m",
+          "signal_type": "community_pain",
+          "title": "Update dependency com.amazonaws:aws-java-sdk-s3 to v1.12.797 (dev)",
+          "url": "https://github.com/it-at-m/kobit-backend/pull/63",
+          "source": "github_issue_search",
+          "published_at": "2026-02-13T19:35:22Z",
+          "bucket_hint": "china_domestic",
+          "owner_type": "",
+          "issue_user_type": "bot"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-13T19:35:22+00:00"
+    },
+    {
+      "company": "open-metadata",
+      "focus_bucket": "other",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 18,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "open-metadata",
+          "signal_type": "community_pain",
+          "title": "Add Columns to indexing",
+          "url": "https://github.com/open-metadata/OpenMetadata/pull/25622",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T04:10:32Z",
+          "bucket_hint": "other",
+          "owner_type": "",
+          "issue_user_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:10:32+00:00"
+    },
+    {
+      "company": "workarea-commerce",
+      "focus_bucket": "other",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 18,
+      "demand_signals": [
+        "community_pain"
+      ],
+      "possible_contacts": [
+        "SRE Lead",
+        "Search Team Lead",
+        "Infrastructure Director"
+      ],
+      "outreach_hook": "Detected community pain signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "workarea-commerce",
+          "signal_type": "community_pain",
+          "title": "WA-CI: Unblock next branch CI (Ruby 3.2 boot + bundler-audit)",
+          "url": "https://github.com/workarea-commerce/workarea/issues/658",
+          "source": "github_issue_search",
+          "published_at": "2026-02-25T04:05:25Z",
+          "bucket_hint": "other",
+          "owner_type": "",
+          "issue_user_type": "user"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-25T04:05:25+00:00"
+    },
+    {
+      "company": "36Kr",
+      "focus_bucket": "china_global",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 8,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "36Kr",
+          "signal_type": "funding",
+          "title": "59起融资，11家闯关IPO，关税风暴下，品牌出海赛道依旧热钱翻涌",
+          "url": "https://www.36kr.com/p/3507426463390601",
+          "source": "bing_news",
+          "published_at": "2025-10-13T11:55:00+00:00",
+          "bucket_hint": "china_global"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2025-10-13T11:55:00+00:00"
+    },
+    {
+      "company": "Cheque-in",
+      "focus_bucket": "other",
+      "entity_type": "individual",
+      "entity_priority": -12,
+      "strength_score": 8,
+      "demand_signals": [
+        "funding"
+      ],
+      "possible_contacts": [
+        "VP Engineering",
+        "Head of Platform",
+        "CTO"
+      ],
+      "outreach_hook": "Detected funding signals; position managed cloud Elasticsearch as a way to cut ops complexity while scaling search and vector workloads.",
+      "evidence": [
+        {
+          "company": "Cheque-in",
+          "signal_type": "funding",
+          "title": "Cheque-in: 10 ANZ startups raised nearly $193 million this week",
+          "url": "https://www.startupdaily.net/topic/funding/cheque-in-10-anz-startups-raised-nearly-193-million-this-week/",
+          "source": "bing_news",
+          "published_at": "2026-02-12T21:34:00+00:00",
+          "bucket_hint": "other"
+        }
+      ],
+      "signal_count": 1,
+      "latest_signal_at": "2026-02-12T21:34:00+00:00"
+    }
+  ],
+  "canvas_file": "/home/denny/projects/es-pdsa/openclaw-workspace/radar/reports/es-industry-radar-20260225-041110.canvas"
+}

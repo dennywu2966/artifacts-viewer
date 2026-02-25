@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "id": "3c6de1b7dd91465d",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 560,
+      "height": 140,
+      "text": "# ES Radar Canvas\\n\\nGenerated: 2026-02-25T04:09:01.821604+00:00\\nTarget Mix: China Domestic 50% / China Global 30% / Other 20%",
+      "color": "5"
+    },
+    {
+      "id": "38743fbb4474f988",
+      "type": "text",
+      "x": 0,
+      "y": 180,
+      "width": 560,
+      "height": 220,
+      "text": "# Focus Mix (Target vs Actual)\\n\\n- China Domestic: target=10 actual=10\\n- China Global: target=6 actual=6\\n- Other: target=4 actual=4",
+      "color": "4"
+    },
+    {
+      "id": "36ab4aaa56c8fea2",
+      "type": "text",
+      "x": 600,
+      "y": 180,
+      "width": 560,
+      "height": 260,
+      "text": "# Signal Mix (Priority)\\n\\ngithub_adoption    [##############..........] 12 ( 60.0%)\\ncommunity_pain     [##########..............]  8 ( 40.0%)",
+      "color": "2"
+    },
+    {
+      "id": "e711631380ef1b42",
+      "type": "text",
+      "x": 1200,
+      "y": 180,
+      "width": 500,
+      "height": 220,
+      "text": "# Entity Mix (Priority)\\n\\nenterprise_project [############............] 10 ( 50.0%)\\nunknown            [###########.............]  9 ( 45.0%)\\nindividual         [#.......................]  1 (  5.0%)",
+      "color": "1"
+    },
+    {
+      "id": "75ebcb361c656225",
+      "type": "text",
+      "x": 0,
+      "y": 430,
+      "width": 560,
+      "height": 220,
+      "text": "# Score Bands (Priority)\\n\\n80-100             [........................]  0 (  0.0%)\\n60-79              [........................]  0 (  0.0%)\\n40-59              [####################....] 17 ( 85.0%)\\n0-39               [####....................]  3 ( 15.0%)",
+      "color": "3"
+    },
+    {
+      "id": "af2c7b4ca07ae6c7",
+      "type": "text",
+      "x": 600,
+      "y": 460,
+      "width": 560,
+      "height": 300,
+      "text": "# Top Priority Targets\\n\\n1. EvanLi (China Domestic) score=49\\n2. maqibg (China Domestic) score=49\\n3. valitydev (China Domestic) score=48\\n4. grafana (China Domestic) score=48\\n5. apache (China Domestic) score=48\\n6. bjorncs (China Domestic) score=48\\n7. hiifong (China Domestic) score=46\\n8. SinuxLee (China Domestic) score=46\\n9. jxzzlfh (China Domestic) score=46\\n10. KABBOUCHI (China Domestic) score=46",
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "84896d3e06788462",
+      "fromNode": "3c6de1b7dd91465d",
+      "toNode": "38743fbb4474f988"
+    },
+    {
+      "id": "dc1885915a8902bc",
+      "fromNode": "3c6de1b7dd91465d",
+      "toNode": "36ab4aaa56c8fea2"
+    },
+    {
+      "id": "9a636f756ac7defe",
+      "fromNode": "3c6de1b7dd91465d",
+      "toNode": "e711631380ef1b42"
+    },
+    {
+      "id": "0e647f28da2af6b6",
+      "fromNode": "38743fbb4474f988",
+      "toNode": "75ebcb361c656225"
+    },
+    {
+      "id": "2092de654fa53d1e",
+      "fromNode": "36ab4aaa56c8fea2",
+      "toNode": "af2c7b4ca07ae6c7"
+    }
+  ]
+}

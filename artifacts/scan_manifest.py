@@ -36,20 +36,37 @@ def main():
         "canvas": ["canvas"],
     }
 
-    # Scan ALL files recursively
+    # Root-level meta files to skip (not artifacts)
+    skip_root_files = {'index.html', 'manifest.json', 'scan_manifest.py', 'SAVED_FROM.txt'}
+
+    # Scan ALL files recursively, skipping root-level meta files
     all_files = []
-    all_categories = set()
+    all_categories = {}  # cat_id -> set of extensions
 
     for file_path in artifacts_dir.rglob("*"):
         if file_path.is_file() and not file_path.name.startswith('.'):
             rel_path = file_path.relative_to(artifacts_dir)
-            category = get_category_from_path(rel_path)
-            all_categories.add(category)
+            parts = rel_path.parts
 
+            # Skip root-level meta files
+            if len(parts) == 1 and parts[0] in skip_root_files:
+                continue
+
+            # Skip files directly in artifacts root that aren't in subdirs
+            if len(parts) == 1:
+                continue
+
+            category = parts[0]  # First directory component
             ext = file_path.suffix.lstrip('.').lower()
+
+            if category not in all_categories:
+                all_categories[category] = set()
+            if ext:
+                all_categories[category].add(ext)
+
             all_files.append({
                 "name": file_path.name,
-                "path": str(rel_path),
+                "path": str(rel_path).replace("\\", "/"),
                 "category": category,
                 "size": get_file_size(file_path)
             })
@@ -59,7 +76,7 @@ def main():
 
     # Build directories list from found categories
     directories = []
-    for cat in sorted(all_categories):
+    for cat in sorted(all_categories.keys()):
         if cat in known_dirs:
             directories.append({
                 "id": cat,
@@ -68,12 +85,13 @@ def main():
                 "extensions": known_dirs[cat]
             })
         else:
-            # Unknown category - treat as custom
+            # Dynamic directory - detect extensions from actual files
+            detected_exts = sorted(all_categories[cat])
             directories.append({
                 "id": cat,
-                "name": cat.replace('_', ' ').title(),
+                "name": cat.replace('_', '-').replace('-', ' ').title(),
                 "path": f"{cat}/",
-                "extensions": []
+                "extensions": detected_exts
             })
 
     # Create manifest

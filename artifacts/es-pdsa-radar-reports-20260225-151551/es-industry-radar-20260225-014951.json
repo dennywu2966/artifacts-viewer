@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-02-25T01:49:51.438446+00:00",
+  "signal_count": 0,
+  "entity_count": 0,
+  "mix_policy": {
+    "china_domestic": 0.5,
+    "china_global": 0.3,
+    "other": 0.2
+  },
+  "mix_target_counts": {
+    "china_domestic": 10,
+    "china_global": 6,
+    "other": 4
+  },
+  "mix_actual_counts": {
+    "china_domestic": 0,
+    "china_global": 0,
+    "other": 0
+  },
+  "mix_gap_counts": {
+    "china_domestic": 10,
+    "china_global": 6,
+    "other": 4
+  },
+  "insights": {
+    "focus_distribution_all": {
+      "china_domestic": 0,
+      "china_global": 0,
+      "other": 0
+    },
+    "focus_distribution_priority": {
+      "china_domestic": 0,
+      "china_global": 0,
+      "other": 0
+    },
+    "signal_distribution_priority": {},
+    "score_bands_priority": {
+      "80-100": 0,
+      "60-79": 0,
+      "40-59": 0,
+      "0-39": 0
+    }
+  },
+  "priority_targets": [],
+  "results": [],
+  "canvas_file": "/home/denny/projects/es-pdsa/openclaw-workspace/radar/reports/es-industry-radar-20260225-014951.canvas"
+}

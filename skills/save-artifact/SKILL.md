@@ -27,10 +27,13 @@ Save target artifacts to ~/projects/artifacts-viewer for easy viewing and organi
 
 ```bash
 # Ensure directory exists
-mkdir -p ~/projects/artifacts-viewer
+mkdir -p ~/projects/artifacts-viewer/artifacts/<category-subdir>
 
-# Copy artifact to viewer (use descriptive name)
-cp <source-file> ~/projects/artifacts-viewer/<descriptive-name>
+# Copy artifact to viewer subdirectory (use descriptive name)
+cp <source-file> ~/projects/artifacts-viewer/artifacts/<category-subdir>/<descriptive-name>
+
+# REQUIRED: Regenerate manifest so web viewer picks up new files immediately
+python3 ~/projects/artifacts-viewer/artifacts/scan_manifest.py
 ```
 
 ### Git Operations
