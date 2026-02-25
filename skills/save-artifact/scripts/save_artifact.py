@@ -37,8 +37,8 @@ def save_artifact(source_path: str, custom_name: str = None, category: str = Non
     if not source.exists():
         raise FileNotFoundError(f"Source file not found: {source}")
 
-    # Determine target directory
-    artifacts_dir = Path.home() / "projects" / "artifacts-viewer"
+    # Determine target directory - always use artifacts subdirectory
+    artifacts_dir = Path.home() / "projects" / "artifacts-viewer" / "artifacts"
     artifacts_dir.mkdir(parents=True, exist_ok=True)
 
     # Determine category
