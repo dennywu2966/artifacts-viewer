@@ -21,11 +21,14 @@ def get_category_from_extension(filename: str) -> str:
         '.pptx': 'slides',
         '.md': 'markdown',
         '.mdx': 'markdown',
+        '.mmd': 'diagrams',
+        '.mermaid': 'diagrams',
+        '.canvas': 'canvas',
         '.png': 'images',
         '.jpg': 'images',
         '.jpeg': 'images',
         '.gif': 'images',
-        '.svg': 'diagrams',
+        '.svg': 'images',
     }
     return categories.get(ext, 'other')
 

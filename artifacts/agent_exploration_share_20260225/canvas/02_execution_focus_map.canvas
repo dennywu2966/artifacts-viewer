@@ -1,0 +1,127 @@
+{
+  "nodes": [
+    {
+      "id": "x0",
+      "type": "text",
+      "x": 520,
+      "y": 60,
+      "width": 420,
+      "height": 140,
+      "text": "# 执行聚焦脑图\n\n主题：方向共识后如何最小闭环推进"
+    },
+    {
+      "id": "x1",
+      "type": "text",
+      "x": 80,
+      "y": 260,
+      "width": 320,
+      "height": 200,
+      "text": "## Workstream A\nes-aiops\n- 场景优先级\n- benchmark对比\n- 回归门禁"
+    },
+    {
+      "id": "x2",
+      "type": "text",
+      "x": 520,
+      "y": 260,
+      "width": 320,
+      "height": 200,
+      "text": "## Workstream B\nes-pdsa\n- 信号采集\n- Mix策略\n- 周报机制"
+    },
+    {
+      "id": "x3",
+      "type": "text",
+      "x": 960,
+      "y": 260,
+      "width": 320,
+      "height": 200,
+      "text": "## Workstream C\nsearch_benchmark_harness\n- Provider扩展\n- 质量评测\n- CI化"
+    },
+    {
+      "id": "x4",
+      "type": "text",
+      "x": 80,
+      "y": 560,
+      "width": 320,
+      "height": 180,
+      "text": "## 共性保障\n- 固定脚本\n- e2e回归\n- 变更可追溯"
+    },
+    {
+      "id": "x5",
+      "type": "text",
+      "x": 520,
+      "y": 560,
+      "width": 320,
+      "height": 180,
+      "text": "## 评审节奏\n- 周度进展\n- 双周评测\n- 月度方向校准"
+    },
+    {
+      "id": "x6",
+      "type": "text",
+      "x": 960,
+      "y": 560,
+      "width": 320,
+      "height": 180,
+      "text": "## 知识沉淀\n- LESSONS_LEARNED\n- 模板复用\n- 经验手册"
+    },
+    {
+      "id": "gx",
+      "type": "group",
+      "x": 40,
+      "y": 220,
+      "width": 1270,
+      "height": 560,
+      "label": "执行层结构",
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "xe1",
+      "fromNode": "x0",
+      "toNode": "x1",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "xe2",
+      "fromNode": "x0",
+      "toNode": "x2",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "xe3",
+      "fromNode": "x0",
+      "toNode": "x3",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "xe4",
+      "fromNode": "x1",
+      "toNode": "x4",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "xe5",
+      "fromNode": "x2",
+      "toNode": "x5",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "xe6",
+      "fromNode": "x3",
+      "toNode": "x6",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "xe7",
+      "fromNode": "x4",
+      "toNode": "x5",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "xe8",
+      "fromNode": "x5",
+      "toNode": "x6",
+      "toEnd": "arrow"
+    }
+  ]
+}

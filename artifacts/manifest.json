@@ -1,0 +1,282 @@
+{
+  "directories": [
+    {
+      "id": "agent_exploration_share_20260225",
+      "name": "Agent Exploration Share 20260225",
+      "path": "agent_exploration_share_20260225/",
+      "extensions": []
+    },
+    {
+      "id": "canvas",
+      "name": "Canvas",
+      "path": "canvas/",
+      "extensions": [
+        "canvas"
+      ]
+    },
+    {
+      "id": "diagrams",
+      "name": "Diagrams",
+      "path": "diagrams/",
+      "extensions": [
+        "mmd",
+        "mermaid"
+      ]
+    },
+    {
+      "id": "docs",
+      "name": "Docs",
+      "path": "docs/",
+      "extensions": [
+        "pdf",
+        "doc",
+        "docx"
+      ]
+    },
+    {
+      "id": "index.html",
+      "name": "Index.Html",
+      "path": "index.html/",
+      "extensions": []
+    },
+    {
+      "id": "manifest.json",
+      "name": "Manifest.Json",
+      "path": "manifest.json/",
+      "extensions": []
+    },
+    {
+      "id": "markdown",
+      "name": "Markdown",
+      "path": "markdown/",
+      "extensions": [
+        "md",
+        "mdx"
+      ]
+    },
+    {
+      "id": "scan_manifest.py",
+      "name": "Scan Manifest.Py",
+      "path": "scan_manifest.py/",
+      "extensions": []
+    }
+  ],
+  "files": [
+    {
+      "name": "00_总览导航.md",
+      "path": "agent_exploration_share_20260225/00_总览导航.md",
+      "category": "agent_exploration_share_20260225",
+      "size": "1 KB"
+    },
+    {
+      "name": "01_公开版_汇报文档.md",
+      "path": "agent_exploration_share_20260225/01_公开版_汇报文档.md",
+      "category": "agent_exploration_share_20260225",
+      "size": "5 KB"
+    },
+    {
+      "name": "02_内部详版_汇报文档.md",
+      "path": "agent_exploration_share_20260225/02_内部详版_汇报文档.md",
+      "category": "agent_exploration_share_20260225",
+      "size": "7 KB"
+    },
+    {
+      "name": "REVIEW_NOTES.md",
+      "path": "agent_exploration_share_20260225/REVIEW_NOTES.md",
+      "category": "agent_exploration_share_20260225",
+      "size": "1 KB"
+    },
+    {
+      "name": "01_全目录覆盖与证据索引.md",
+      "path": "agent_exploration_share_20260225/appendix/01_全目录覆盖与证据索引.md",
+      "category": "agent_exploration_share_20260225",
+      "size": "1 KB"
+    },
+    {
+      "name": "02_项目卡片总表.md",
+      "path": "agent_exploration_share_20260225/appendix/02_项目卡片总表.md",
+      "category": "agent_exploration_share_20260225",
+      "size": "5 KB"
+    },
+    {
+      "name": "03_旗舰遴选评分说明.md",
+      "path": "agent_exploration_share_20260225/appendix/03_旗舰遴选评分说明.md",
+      "category": "agent_exploration_share_20260225",
+      "size": "2 KB"
+    },
+    {
+      "name": "01_exploration_strategy_map.canvas",
+      "path": "agent_exploration_share_20260225/canvas/01_exploration_strategy_map.canvas",
+      "category": "agent_exploration_share_20260225",
+      "size": "3 KB"
+    },
+    {
+      "name": "02_execution_focus_map.canvas",
+      "path": "agent_exploration_share_20260225/canvas/02_execution_focus_map.canvas",
+      "category": "agent_exploration_share_20260225",
+      "size": "2 KB"
+    },
+    {
+      "name": "appendix_project_registry.csv",
+      "path": "agent_exploration_share_20260225/data/appendix_project_registry.csv",
+      "category": "agent_exploration_share_20260225",
+      "size": "5 KB"
+    },
+    {
+      "name": "full_directory_coverage.csv",
+      "path": "agent_exploration_share_20260225/data/full_directory_coverage.csv",
+      "category": "agent_exploration_share_20260225",
+      "size": "668 B"
+    },
+    {
+      "name": "inventory_projects.csv",
+      "path": "agent_exploration_share_20260225/data/inventory_projects.csv",
+      "category": "agent_exploration_share_20260225",
+      "size": "10 KB"
+    },
+    {
+      "name": "project_scoring.csv",
+      "path": "agent_exploration_share_20260225/data/project_scoring.csv",
+      "category": "agent_exploration_share_20260225",
+      "size": "6 KB"
+    },
+    {
+      "name": "recent_projects_summary.csv",
+      "path": "agent_exploration_share_20260225/data/recent_projects_summary.csv",
+      "category": "agent_exploration_share_20260225",
+      "size": "8 KB"
+    },
+    {
+      "name": "01_portfolio_structure.svg",
+      "path": "agent_exploration_share_20260225/figures/01_portfolio_structure.svg",
+      "category": "agent_exploration_share_20260225",
+      "size": "4 KB"
+    },
+    {
+      "name": "02_timeline_milestones.svg",
+      "path": "agent_exploration_share_20260225/figures/02_timeline_milestones.svg",
+      "category": "agent_exploration_share_20260225",
+      "size": "17 KB"
+    },
+    {
+      "name": "03_flagship_priority_matrix.svg",
+      "path": "agent_exploration_share_20260225/figures/03_flagship_priority_matrix.svg",
+      "category": "agent_exploration_share_20260225",
+      "size": "6 KB"
+    },
+    {
+      "name": "04_strategy_flow.svg",
+      "path": "agent_exploration_share_20260225/figures/04_strategy_flow.svg",
+      "category": "agent_exploration_share_20260225",
+      "size": "15 KB"
+    },
+    {
+      "name": "05_next_quarter_roadmap.svg",
+      "path": "agent_exploration_share_20260225/figures/05_next_quarter_roadmap.svg",
+      "category": "agent_exploration_share_20260225",
+      "size": "9 KB"
+    },
+    {
+      "name": "06_frontline_adoption_journey.svg",
+      "path": "agent_exploration_share_20260225/figures/06_frontline_adoption_journey.svg",
+      "category": "agent_exploration_share_20260225",
+      "size": "18 KB"
+    },
+    {
+      "name": "07_capability_stack.svg",
+      "path": "agent_exploration_share_20260225/figures/07_capability_stack.svg",
+      "category": "agent_exploration_share_20260225",
+      "size": "19 KB"
+    },
+    {
+      "name": "08_risk_control_map.svg",
+      "path": "agent_exploration_share_20260225/figures/08_risk_control_map.svg",
+      "category": "agent_exploration_share_20260225",
+      "size": "17 KB"
+    },
+    {
+      "name": "09_governance_loop.svg",
+      "path": "agent_exploration_share_20260225/figures/09_governance_loop.svg",
+      "category": "agent_exploration_share_20260225",
+      "size": "324 KB"
+    },
+    {
+      "name": "gpt52_review_runner.py",
+      "path": "agent_exploration_share_20260225/tools/gpt52_review_runner.py",
+      "category": "agent_exploration_share_20260225",
+      "size": "2 KB"
+    },
+    {
+      "name": "sample.canvas",
+      "path": "canvas/sample.canvas",
+      "category": "canvas",
+      "size": "2 KB"
+    },
+    {
+      "name": "architecture.mmd",
+      "path": "diagrams/architecture.mmd",
+      "category": "diagrams",
+      "size": "211 B"
+    },
+    {
+      "name": "reg_validation_guide.md",
+      "path": "docs/agents/reg_validation_guide.md",
+      "category": "docs",
+      "size": "2 KB"
+    },
+    {
+      "name": "2026-02-24-artifacts-viewer-design.md",
+      "path": "docs/plans/2026-02-24-artifacts-viewer-design.md",
+      "category": "docs",
+      "size": "3 KB"
+    },
+    {
+      "name": "2026-02-24-artifacts-viewer-impl-plan.md",
+      "path": "docs/plans/2026-02-24-artifacts-viewer-impl-plan.md",
+      "category": "docs",
+      "size": "18 KB"
+    },
+    {
+      "name": "index.html",
+      "path": "index.html",
+      "category": "index.html",
+      "size": "31 KB"
+    },
+    {
+      "name": "manifest.json",
+      "path": "manifest.json",
+      "category": "manifest.json",
+      "size": "1 KB"
+    },
+    {
+      "name": "chinese-test.md",
+      "path": "markdown/chinese-test.md",
+      "category": "markdown",
+      "size": "273 B"
+    },
+    {
+      "name": "notes.md",
+      "path": "markdown/notes.md",
+      "category": "markdown",
+      "size": "138 B"
+    },
+    {
+      "name": "readme.md",
+      "path": "markdown/readme.md",
+      "category": "markdown",
+      "size": "654 B"
+    },
+    {
+      "name": "test_skill.md",
+      "path": "markdown/test_skill.md",
+      "category": "markdown",
+      "size": "65 B"
+    },
+    {
+      "name": "scan_manifest.py",
+      "path": "scan_manifest.py",
+      "category": "scan_manifest.py",
+      "size": "3 KB"
+    }
+  ]
+}

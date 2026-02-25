@@ -723,7 +723,8 @@
   <script>
     // ==================== Configuration ====================
 
-    const fileCategories = [
+    // Default categories (used if manifest fails to load)
+    const defaultCategories = [
       { id: 'docs', name: 'Documents', extensions: ['pdf', 'doc', 'docx'] },
       { id: 'slides', name: 'Presentations', extensions: ['ppt', 'pptx'] },
       { id: 'markdown', name: 'Markdown', extensions: ['md', 'mdx'] },
@@ -732,18 +733,22 @@
       { id: 'canvas', name: 'Canvas', extensions: ['canvas'] },
     ];
 
-    // Files - paths relative to artifacts folder
-    const files = [
-      { name: 'sample.pdf', path: 'docs/sample.pdf', category: 'docs', size: '2.3 MB' },
-      { name: 'presentation.pptx', path: 'slides/presentation.pptx', category: 'slides', size: '5.1 MB' },
-      { name: 'readme.md', path: 'markdown/readme.md', category: 'markdown', size: '4.2 KB' },
-      { name: 'architecture.mmd', path: 'diagrams/architecture.mmd', category: 'diagrams', size: '1.1 KB' },
-      { name: 'photo.jpg', path: 'images/photo.jpg', category: 'images', size: '2.8 MB' },
-      { name: 'diagram.svg', path: 'images/diagram.svg', category: 'images', size: '45 KB' },
-      { name: 'notes.md', path: 'markdown/notes.md', category: 'markdown', size: '2.8 KB' },
-      { name: 'test_skill.md', path: 'markdown/test_skill.md', category: 'markdown', size: '65 B' },
-      { name: 'sample.canvas', path: 'canvas/sample.canvas', category: 'canvas', size: '1.8 KB' },
-    ];
+    // Load from manifest.json
+    let fileCategories = defaultCategories;
+    let files = [];
+
+    async function loadManifest() {
+      try {
+        const response = await fetch('manifest.json');
+        if (response.ok) {
+          const manifest = await response.json();
+          if (manifest.directories) fileCategories = manifest.directories;
+          if (manifest.files) files = manifest.files;
+        }
+      } catch (e) {
+        console.log('Using default configuration');
+      }
+    }
 
     // ==================== Viewers ====================
 
@@ -1128,8 +1133,10 @@
     });
 
     // Init
-    renderSidebar();
-    showWelcome();
+    loadManifest().then(() => {
+      renderSidebar();
+      showWelcome();
+    });
   </script>
 </body>
 </html>
