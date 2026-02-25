@@ -1,0 +1,30 @@
+project,biz_score,agent_score,execution_score,share_score,penalty,composite,selected_files,sample_files
+oauth-for-playwright,0,817,515,6,0,375.05,8,bot_review_snapshot/README.md | README.md | docs/validation.md | docs/DESIGN.md
+es-aiops,20,483,332,18,0,236.5,8,README.md | docs/plans/2026-02-22-es-aiops-bff-benchmark-implementation.md | docs/plans/2026-02-21-es-aiops-agent-implementation.md | docs/appendix-detailed.md
+pai_mem0_finetune_lab,1,343,298,105,0,198.65,8,README.md | outputs/test_cpt/README.md | docs/plans/2026-02-10-milestone-doc-unification.md | docs/plans/2026-02-12-eval-framework-implementation-plan.md
+denny-all-in-one,11,389,199,29,0,175.0,8,README.md | dot_claude/skills/anthropics-skills/README.md | docs/plans/2026-02-21-backup-restore-implementation.md | docs/plans/2026-02-21-backup-restore-design.md
+search_benchmark_harness,1,222,318,73,0,160.95,8,README.md | docs/plans/2026-02-12-benchmark-harness-plan.md | docs/plans/2026-02-12-benchmark-harness-design.md | docs/BENCHMARKS.md
+es-9.2.4-plugins-rt-scale,31,144,376,23,0,149.55,8,docs/reference/query-languages/esql/README.md | docs/README.md | docs/plans/2026-02-10-opus-review-fixes-plan.md | docs/tech-share-lance-cloud-iam-ldap-PR6.md
+es-lance-iam-demo,15,160,286,18,0,126.85,8,.worktree/es-lance-rt-scale-iam-demo/reg_validation_guide.md | .worktree/es-lance-rt-scale-iam-demo/task_plan.md | .worktree/es-lance-rt-scale-iam-demo/AGENT.md | .worktree/es-lance-rt-scale-iam-demo/AGENTS.md
+_bmad,18,173,231,39,0,121.95,8,cis/workflows/innovation-strategy/README.md | tea/workflows/testarch/README.md | tea/workflows/testarch/trace/validation-report-20260127-095021.md | tea/workflows/testarch/trace/validation-report-20260127-102401.md
+openclaw,1,368,4,9,0,113.45,8,docs/gateway/remote-gateway-readme.md | docs/.i18n/README.md | docs/tools/agent-send.md | docs/tools/subagents.md
+es-lance-in-oss-demo,6,210,114,7,0,94.4,8,scripts/ralph/README.md | scripts/ralph/flowchart/README.md | reg_validation_guide.md | scripts/ralph/prompt.md
+kibana,37,173,111,103,20,89.5,8,x-pack/platform/plugins/shared/dashboard_agent/README.md | x-pack/platform/plugins/shared/ai_infra/product_doc_base/README.md | docs/settings-gen/readme.md | docs/reference/configuration-reference/reporting-settings.md
+kibana-iam,37,173,111,103,20,89.5,8,x-pack/platform/plugins/shared/dashboard_agent/README.md | x-pack/platform/plugins/shared/agent_builder_platform/README.md | docs/settings-gen/readme.md | docs/reference/configuration-reference/reporting-settings.md
+kibana-9.2.4,21,107,218,79,20,87.65,8,x-pack/platform/plugins/shared/ai_infra/product_doc_base/README.md | x-pack/platform/packages/shared/kbn-inference-prompt-utils/README.md | docs/plans/2026-02-13-aliyun-auth-abstraction-refactor.md | docs/MANUAL_OAUTH_VALIDATION.md
+es-9.2.4-plugins-real-time,15,102,171,113,20,79.7,8,docs/reference/query-languages/esql/README.md | docs/README.md | docs/plans/2026-02-06-lance-p1-p2-query-nrt.md | docs/reference/search-connectors/es-connectors-sharepoint.md
+es-lance-demo,29,85,152,21,0,74.95,8,.worktrees/demo-ui-nt-scale-plan/README.md | README.md | .worktrees/demo-ui-nt-scale-plan/reg_validation_guide.md | .worktrees/demo-ui-nt-scale-plan/docs/branding-saling-strategies.md
+es-9.2.4-plugins-scale,18,91,143,117,20,70.95,8,docs/reference/query-languages/esql/README.md | docs/README.md | docs/plans/2026-02-06-p3-shard-consistency-design.md | docs/reference/search-connectors/es-connectors-sharepoint.md
+tests-beads-superpower,28,127,87,3,0,67.45,3,future_plan_refined_zh.md | natively_enhanced_es_autodrive_strategy_1_2y_zh.md | beads-superpower-combine.md
+elasticsearch,14,93,127,114,20,65.95,8,docs/reference/query-languages/esql/README.md | docs/README.md | docs/ram-e2e-validation.md | docs/reference/search-connectors/es-connectors-sharepoint.md
+ralph,3,187,29,8,0,65.7,8,README.md | flowchart/README.md | AGENTS.md | prompt.md
+ldap-demo,7,103,128,3,0,65.25,8,README.md | idaas-ldap-connector/README.md | docs/plans/2026-02-06-idaas-sso-implementation.md | docs/机制说明.md
+winter-note,5,123,85,19,0,63.2,8,denny-agents/README.md | docs/agents/LESSONS_LEARNED.md | docs/plans/2026-02-24-cross-device-note-agent-design.md | docs/agents/reg_validation_guide.md
+es-lance-claude,17,83,109,114,20,59.2,8,docs/reference/query-languages/esql/README.md | docs/README.md | docs/reference/search-connectors/es-connectors-sharepoint.md | docs/reference/search-connectors/es-connectors-sharepoint-online.md
+es-lance-claude-glm,17,83,109,114,20,59.2,8,docs/reference/query-languages/esql/README.md | docs/README.md | docs/reference/search-connectors/es-connectors-sharepoint.md | docs/reference/search-connectors/es-connectors-sharepoint-online.md
+es-pdsa,2,130,56,27,0,58.9,8,openclaw-workspace/radar/README.md | docs/agents/LESSONS_LEARNED.md | openclaw-workspace/radar/reports/es-industry-radar-latest.json | openclaw-workspace/radar/reports/es-industry-radar-latest.md
+es-9.2.4-plugins,17,84,107,112,20,58.6,8,docs/reference/query-languages/esql/README.md | docs/README.md | docs/reference/search-connectors/es-connectors-sharepoint.md | docs/reference/search-connectors/es-connectors-sharepoint-online.md
+vlm-vla,3,94,58,22,0,47.85,8,README.md | docs/plans/2025-02-22-vla-implementation-plan.md | docs/plans/2025-02-22-vla-training-design.md | docs/kaggle-workflow.md
+es-8.17-plugins,8,49,100,10,20,23.7,8,docs/reference/esql/functions/README.md | libs/entitlement/agent/README.md | docs/src/yamlRestTest/resources/normalized-T1117-AtomicRed-regsvr32.json | docs/reference/esql/functions/kibana/inline_cast.json
+ldap-demo-val,4,47,34,0,0,23.6,3,idaas-ldap-connector/README.md | README.md | docs/ALIYUN_IDAAS_GUIDE.md
+elasticsearch-java,28,48,45,6,20,13.85,8,docs/design/Readme.md | rest5-client/README.md | docs/reference/usage/indexing-bulk.md | docs/reference/usage/reading.md

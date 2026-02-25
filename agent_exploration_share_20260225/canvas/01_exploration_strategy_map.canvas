@@ -1,0 +1,143 @@
+{
+  "nodes": [
+    {
+      "id": "n_center",
+      "type": "text",
+      "x": 420,
+      "y": 260,
+      "width": 420,
+      "height": 220,
+      "text": "# 两个月探索总览\n\n目标：形成可持续的业务方向识别 + Agent工程化能力。\n\n核心结论：\n- 旗舰1：es-aiops\n- 旗舰2：es-pdsa\n- 备选：search_benchmark_harness"
+    },
+    {
+      "id": "n_scope",
+      "type": "text",
+      "x": 40,
+      "y": 40,
+      "width": 320,
+      "height": 180,
+      "text": "## 覆盖范围\n- 顶层目录：32\n- 有md/json证据：29\n- 近两月窗口：2025-12-25 ~ 2026-02-25"
+    },
+    {
+      "id": "n_theme1",
+      "type": "text",
+      "x": 40,
+      "y": 300,
+      "width": 320,
+      "height": 220,
+      "text": "## 主题A：业务/产品探索\n- 行业雷达\n- 机会优先级\n- 产品化路线\n- 价值闭环假设"
+    },
+    {
+      "id": "n_theme2",
+      "type": "text",
+      "x": 40,
+      "y": 560,
+      "width": 320,
+      "height": 220,
+      "text": "## 主题B：Agent工程实践\n- model/prompt/context/harness tuning\n- 固定脚本与回归门禁\n- lessons learned沉淀\n- 可复用模板"
+    },
+    {
+      "id": "n_flag1",
+      "type": "text",
+      "x": 920,
+      "y": 80,
+      "width": 340,
+      "height": 200,
+      "text": "## 旗舰1：es-aiops\n- 智能诊断Agent产品化\n- KPI与门禁可度量\n- 具备演进路径和回归体系"
+    },
+    {
+      "id": "n_flag2",
+      "type": "text",
+      "x": 920,
+      "y": 340,
+      "width": 340,
+      "height": 200,
+      "text": "## 旗舰2：es-pdsa\n- 行业雷达与机会池\n- Mix策略与证据化输出\n- 管理层方向讨论抓手"
+    },
+    {
+      "id": "n_backup",
+      "type": "text",
+      "x": 920,
+      "y": 600,
+      "width": 340,
+      "height": 180,
+      "text": "## 备选：search_benchmark_harness\n- 检索API基准评测\n- 采购/架构决策支撑\n- 可作为通用评测平台"
+    },
+    {
+      "id": "n_decision",
+      "type": "text",
+      "x": 420,
+      "y": 760,
+      "width": 420,
+      "height": 180,
+      "text": "## 本次会议目标\n- 优先获得方向共识\n- 明确旗舰项目叙事\n- 形成下季度行动草案"
+    },
+    {
+      "id": "g_left",
+      "type": "group",
+      "x": 10,
+      "y": 10,
+      "width": 380,
+      "height": 810,
+      "label": "输入与主题",
+      "color": "4"
+    },
+    {
+      "id": "g_right",
+      "type": "group",
+      "x": 890,
+      "y": 50,
+      "width": 390,
+      "height": 760,
+      "label": "优先项目组合",
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "n_scope",
+      "toNode": "n_center",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e2",
+      "fromNode": "n_theme1",
+      "toNode": "n_center",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e3",
+      "fromNode": "n_theme2",
+      "toNode": "n_center",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e4",
+      "fromNode": "n_center",
+      "toNode": "n_flag1",
+      "toEnd": "arrow",
+      "label": "战略影响高"
+    },
+    {
+      "id": "e5",
+      "fromNode": "n_center",
+      "toNode": "n_flag2",
+      "toEnd": "arrow",
+      "label": "方向识别强"
+    },
+    {
+      "id": "e6",
+      "fromNode": "n_center",
+      "toNode": "n_backup",
+      "toEnd": "arrow",
+      "label": "能力补强"
+    },
+    {
+      "id": "e7",
+      "fromNode": "n_center",
+      "toNode": "n_decision",
+      "toEnd": "arrow"
+    }
+  ]
+}

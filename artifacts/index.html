@@ -442,6 +442,36 @@
       text-decoration: underline;
     }
 
+    .markdown-preview img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius-md);
+      margin: 16px 0;
+      box-shadow: var(--shadow-md);
+    }
+
+    .markdown-preview table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    .markdown-preview th, .markdown-preview td {
+      border: 1px solid var(--border);
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    .markdown-preview th {
+      background: var(--surface-hover);
+      font-weight: 600;
+    }
+
+    .markdown-preview tr:nth-child(even) {
+      background: var(--surface-hover);
+    }
+
     .markdown-preview .mermaid {
       background: var(--surface-hover);
       padding: 24px;
@@ -769,10 +799,40 @@
             const response = await fetch(path);
             if (!response.ok) throw new Error('File not found');
             const text = await response.text();
+
+            // Calculate base path for relative resources
+            const pathParts = path.split('/');
+            pathParts.pop(); // Remove filename
+            const basePath = pathParts.length > 0 ? pathParts.join('/') + '/' : '';
+
             let html = marked.parse(text);
 
             const tempDiv = document.createElement('div');
             tempDiv.innerHTML = html;
+
+            // Fix relative image URLs
+            const images = tempDiv.querySelectorAll('img');
+            for (const img of images) {
+              const src = img.getAttribute('src');
+              if (src && !src.startsWith('http') && !src.startsWith('data:')) {
+                img.setAttribute('src', basePath + src);
+              }
+            }
+
+            // Fix relative links to other markdown files
+            const links = tempDiv.querySelectorAll('a');
+            for (const link of links) {
+              const href = link.getAttribute('href');
+              if (href && href.endsWith('.md')) {
+                // Convert .md links to clickable that loads in viewer
+                link.setAttribute('data-md-link', basePath + href);
+                link.style.cursor = 'pointer';
+                link.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  previewFile(basePath + href);
+                });
+              }
+            }
 
             const codeBlocks = tempDiv.querySelectorAll('pre code');
             for (const block of codeBlocks) {
